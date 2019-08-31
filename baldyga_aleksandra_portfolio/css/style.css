@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+#art1, #art3 { background-color: #F1EEEA; }
+#art2 { background-color: #fff; }
+/* NAVIGATION */
+nav {
+    height: 50px;
+    line-height: 50px;
+    width: 100vw;
+    background-color: #F2A0B6;
+    position: absolute;
+
+    top: 25%;
+}
+.fa-times:before, .fa-bars:before {
+    line-height: 50px;
+    color: #fff;
+}
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+}
+nav ul li:hover { 
+    background-color:rgb(247, 183, 206); 
+}
+a {
+    text-decoration: none;
+}
+nav a {color: #fff;}
+a:hover {
+    color: #fff;
+}
+/* HEADER */
+header {
+    background-image: url(../img/clean-deskjpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: static;
+
+    background-position: -195px, left;
+    text-align: center;
+}
+header h1 {   
+    font-size: 40px;
+    padding-top: 40vh;
+}
+header h2 { 
+    font-size: 25px; 
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header h1, h2 {
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+header button {
+    padding: 2px;
+    border: #BAC8D9 2px solid;
+    background-color: transparent;
+    width: 60px;
+    left: calc(50% - 30px);
+    text-transform: uppercase;
+    cursor: pointer;
+
+    margin-top: 50px;
+}
+header button:hover {
+    background-color: #BAC8D9;
+}
+.fa-angle-down:before {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(243, 157, 180);
+    opacity: 0.0;
+    animation: angleDown 3s linear infinite;
+
+    top: 600px;
+}
+@keyframes angleDown {
+    25% {
+        top: 640px; 
+        opacity: 0;
+    }
+    50% {
+        top: 650px;
+        opacity: 0.9;
+    }
+    75% {
+        top: 660px;
+        opacity: 0.8;
+    }
+    80% {
+        top: 670px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 700px;
+        opacity: 0;
+    }
+}  
+/* --- SECTION --- */
+/* ARTICLE 1 */
+#art1 {
+    position: relative;
+}
+h3 {
+    letter-spacing: 2px;
+    font-size: 27px;
+    padding-top: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+#art1 div.myPic {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    background-image: url(../img/me.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+#art1 p.text1 {
+    text-align: center;
+    line-height: 2.5;
+    margin: 10% 15% 15% 15%;
+}
+.fa-graduation-cap:before { 
+    font-size: 50px;
+    cursor: pointer;
+    animation: shakes 5s linear infinite; 
+    color: #292A2B;
+    opacity: 0.9;
+}
+@keyframes shakes {
+    0% {transform: translateX(0)}
+    90% {transform: translateX(0)}
+    91% {transform: translateX(20px)}
+    92% {transform: translateX(-20px)}
+    93% {transform: translateX(20px)}
+    94% {transform: translateX(-20px)}
+    95% {transform: translateX(20px)}
+    96% {transform: translateX(-20px)}
+    97% {transform: translateX(20px)}
+    98% {transform: translateX(-20px)}
+    99% {transform: translateX(20px)}
+    100% {transform: translateX(0)}
+}
+/*  ARTICLE 1 MORE  */
+.more {
+    color: #BAC8D9;
+    background-color: #292A2B;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 0 10% 10% 10%;
+    font-size: 18px;
+}
+.more i {
+    color: #89FF0D;
+    padding-right: 5%;
+}
+.more li { 
+    font-size: 20px;
+}
+.more span {
+    text-align: center;
+    display: block;
+}
+.more a {
+    color: #fff;}
+.more p.text2 { 
+    text-align: center;
+}
+/*  art1 - more - end  */
+/*  article 1 - end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {};
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {};
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {};
+
+/* Landscape phones and down */
+@media (max-width: 480px) {};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ SECTION ------ */
+/* ARTICLE 1 */
+/* ARTICLE 1 MORE */
+/* ARTICLE 2 */
+/* ARTICLE 3 */
+/* ARTICLE 4 */
+/* ARTICLE 4 FORM */
+/* ---- SECTION END ---- */
+/* FOOTER */
