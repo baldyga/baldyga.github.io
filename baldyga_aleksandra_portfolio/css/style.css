@@ -168,6 +168,7 @@ h3 {
 }
 /*  article 1 MORE  */
 .more {
+    display: none;
     color: #BAC8D9;
     background-color: #292A2B;
     position: absolute;
@@ -199,6 +200,7 @@ h3 {
 #art2 { background-color: #fff; }
 #art2 i {
     font-size: 5rem;
+    cursor: pointer;
 }
 #art2 img {
     width: 100px;
@@ -209,11 +211,23 @@ h3 {
     padding-bottom: 10%;
     font-size: 1rem;
 }
+/* color transition */
+.fa-html5, .fa-css3-alt, .fa-js, .fa-git, .fa-bootstrap, .fa-react, .fa-wordpress, .fa-sass, .fa-gulp {
+    transition: color 0.3s linear;
+}
+
+#art2 .fa-html5:hover { color: #e34f26; }
+#art2 .fa-css3-alt:hover { color: #2E77BB; }
+#art2 .fa-js:hover { color: #F0DB4f; }
+#art2 .fa-git:hover { color: #f1502f; }
+/* ajax */
+/* jQuery  */
+#art2 .fa-bootstrap:hover { color: #602c50;}
+#art2 .fa-react:hover { color: #61dbfb; }
+#art2 .fa-wordpress:hover {color: #00749C; }
+#art2 .fa-sass:hover { color: #CD6799; }
+#art2 .fa-gulp:hover { color: #DB4446; }
 /* article 2 - end */
-
-/* article 3 */
-
-/* article 3 - end */
 
 /* article 4 */
 #art4 {
@@ -272,10 +286,16 @@ footer {
 @media (min-width: 1200px) {};
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {};
+@media (min-width: 768px) and (max-width: 979px) {
+    header {
+        background-position: -250px, top;
+    }
+};
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {};
+@media (max-width: 767px) {
+    
+};
 
 /* Landscape phones and down */
 @media (max-width: 480px) {};
