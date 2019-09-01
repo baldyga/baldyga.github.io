@@ -204,7 +204,7 @@ h3 {
     width: 100px;
     height: 130px;
 }
-h4 {
+#art2 h4 {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 1rem;
@@ -212,18 +212,61 @@ h4 {
 /* article 2 - end */
 
 /* article 3 */
-#art3 {
-height: 100vh;
+
+/* article 3 - end */
+
+/* article 4 */
+#art4 {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
 }
+#art4 h4 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 80vh;
+    padding-bottom: 10%;
+}
+#art4 span {
+    cursor: pointer;
+}
+#art4 span:hover { 
+    color: #89FF0D;
+    border: #89FF0D solid 1px;
+}
+#art4 .contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+#art4 .contact i {
+    color: #BFBFBF;
+    font-size: 3rem;
+}
+#art4 .contact i:hover {
+    color: #fff;
+}
+/* article 4 - cooperation */
+.cooperation {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+input, textarea {}
+/* article 4 - cooperation - end */
+/* article 4 - end */
 
-
-
-
-
-
-
-
-
+footer {
+    font-size: 14px;
+    text-align: right;
+    background-color: #000;
+    padding: 20px;
+    color: #BAC8D9;
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {};
