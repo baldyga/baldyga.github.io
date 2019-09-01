@@ -7,8 +7,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 #art1, #art3 { background-color: #F1EEEA; }
-#art2 { background-color: #fff; }
-/* NAVIGATION */
+/* navigation */
 nav {
     height: 50px;
     line-height: 50px;
@@ -40,7 +39,8 @@ nav a {color: #fff;}
 a:hover {
     color: #fff;
 }
-/* HEADER */
+/* navigtion - end  */
+/* header */
 header {
     background-image: url(../img/clean-deskjpg.jpg);
     background-size: cover;
@@ -112,8 +112,11 @@ header button:hover {
         opacity: 0;
     }
 }  
+/* header - end  */
+
 /* --- SECTION --- */
-/* ARTICLE 1 */
+
+/* article 1 */
 #art1 {
     position: relative;
 }
@@ -163,7 +166,7 @@ h3 {
     99% {transform: translateX(20px)}
     100% {transform: translateX(0)}
 }
-/*  ARTICLE 1 MORE  */
+/*  article 1 MORE  */
 .more {
     color: #BAC8D9;
     background-color: #292A2B;
@@ -192,8 +195,26 @@ h3 {
 /*  art1 - more - end  */
 /*  article 1 - end */
 
+/* article 2 */
+#art2 { background-color: #fff; }
+#art2 i {
+    font-size: 5rem;
+}
+#art2 img {
+    width: 100px;
+    height: 130px;
+}
+h4 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 1rem;
+}
+/* article 2 - end */
 
-
+/* article 3 */
+#art3 {
+height: 100vh;
+}
 
 
 
@@ -232,12 +253,3 @@ h3 {
 
 
 
-/* ------ SECTION ------ */
-/* ARTICLE 1 */
-/* ARTICLE 1 MORE */
-/* ARTICLE 2 */
-/* ARTICLE 3 */
-/* ARTICLE 4 */
-/* ARTICLE 4 FORM */
-/* ---- SECTION END ---- */
-/* FOOTER */
