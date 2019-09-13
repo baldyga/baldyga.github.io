@@ -209,10 +209,15 @@ h3 {
     right: 3%;
 }
 .more i.fa-lightbulb {
-    text-align: center;
     font-size: 40px;
     animation: light 5s linear infinite;
 }
+.more a { 
+    color: #292A2B;
+    text-decoration: underline #CD6799;
+}
+
+
 @keyframes light {
     from {
         color: lightgoldenrodyellow;
@@ -226,12 +231,10 @@ h3 {
     align-content: center;
     justify-content: space-around;
     align-content: flex-start;
+    padding-bottom: 10%;
 }
 .courses ol li  {
     list-style-type: square;
-}
-.text3 {
-    flex-basis: 45%;
 }
 .text3 {
     flex-basis: 45%;
