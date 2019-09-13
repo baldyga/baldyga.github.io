@@ -25,5 +25,7 @@ btnClose.addEventListener('click', moreInfo);
 function form() {
     const activeForm = document.querySelector('.cooperation');
     activeForm.classList.toggle('form');
+    const h4 = document.querySelector('.contacth4');
+    h4.classList.add('color');
 }
 spanContact.addEventListener('click', form);

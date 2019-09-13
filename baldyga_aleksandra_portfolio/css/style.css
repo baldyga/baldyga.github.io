@@ -112,7 +112,8 @@ header button:hover {
 /* header - end  */
 
 /* --- SECTION --- */
-#art1, #art3 { background-color: #F1EEEA; }
+#art1,#art2, #art3 { background-color: #F1EEEA; }
+
 /* article 1 */
 #art1 { position: relative; }
 h3 {
@@ -234,46 +235,119 @@ h3 {
 /*  article 1 - end */
 
 /* article 2 */
-#art2 { background-color: #fff; }
 #art2 i {
     font-size: 2rem;
     cursor: pointer;
-}
-#art2 img.ajax {
-    width: 35px;
-    height: 35px;
-}
-#art2 img.jquery {
-    width: 60px;
-    height: 60px;
 }
 #art2 h4 {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 1rem;
 }
-/* icon colors */
-.fa-html5, .fa-css3-alt, .fa-js, .fa-git, .fa-bootstrap, .fa-react, .fa-wordpress, .fa-sass, .fa-gulp {
-    transition: color 0.3s linear;
+/* article 2  animation */
+#art2 .fa-html5 { 
+    animation: htmlColor 5s linear infinite;
 }
-
-#art2 .fa-html5:hover { color: #e34f26; }
-#art2 .fa-css3-alt:hover { color: #2E77BB; }
-#art2 .fa-js:hover { color: #F0DB4f; }
-#art2 .fa-git:hover { color: #f1502f; }
-/* ajax */
-/* jQuery  */
-#art2 .fa-bootstrap:hover { color: #602c50;}
-#art2 .fa-react:hover { color: #61dbfb; }
-#art2 .fa-wordpress:hover {color: #00749C; }
-#art2 .fa-sass:hover { color: #CD6799; }
-#art2 .fa-gulp:hover { color: #DB4446; }
+@keyframes htmlColor {
+    to {
+        color: #e34f26;
+    }
+}
+#art2 .fa-css3-alt { 
+    animation: cssColor 5s linear infinite;
+}
+@keyframes cssColor {
+    to {
+        color: #2E77BB; 
+    }
+}
+#art2 .fa-js { 
+    animation: jsColor 5s linear infinite;
+}
+@keyframes jsColor {
+    to {
+        color: #F0DB4f; 
+    }
+}
+#art2 .fa-git { 
+    animation: gitColor 5s linear infinite;
+}
+@keyframes gitColor {
+    to {
+        color: #f1502f; 
+    }
+}
+#art2 img.ajax {
+    width: 35px;
+    height: 35px;
+    animation: ajaxColor 5s linear infinite;
+}
+@keyframes ajaxColor {
+    to {
+    opacity: 0.7;
+}
+}
+#art2 img.jquery {
+    width: 60px;
+    height: 60px;
+    animation: jqColor 7s 1s linear infinite;
+}
+@keyframes jqColor {
+    to {
+        opacity: 0.7;
+    }
+}
+#art2 .fa-bootstrap { 
+    animation: bootstrapColor 7s 1s linear infinite;
+}
+@keyframes bootstrapColor {
+    to {
+        color: #602c50;
+    }
+}
+#art2 .fa-react { 
+    animation: reactColor 7s 1s linear infinite;
+}
+@keyframes reactColor {
+    to {
+        color: #61dbfb; 
+    }
+}
+#art2 .fa-wordpress {
+    animation: wordpressColor 7s 1s  linear infinite;
+}
+@keyframes wordpressColor {
+    to {
+        color: #00749C; 
+    }
+}
+#art2 .fa-sass { 
+    animation: sassColor 5s linear infinite;
+}
+@keyframes sassColor {
+    to {
+        color: #CD6799; 
+    }
+}
+#art2 .fa-gulp { 
+    animation: gulpColor 7s 1s linear infinite;
+}
+@keyframes gulpColor {
+    to {
+        color: #DB4446; 
+    }
+}
+#art2 .fa-thumbs-up:before { 
+    font-size: 55px;
+    animation: moreColor 7s 1s linear infinite;
+}
+@keyframes moreColor {
+    to {
+        color: hotpink; 
+    }
+}
 /* article 2 - end */
-/* article 3 */
-#art3 p, #art3 h5{
-    color: #000;
-}
-/* article 3 - end */
+
 /* article 4 */
 #art4 {
     position: relative;
@@ -286,7 +360,10 @@ h3 {
     font-weight: 900;
     font-size: 20px;
     line-height: 80vh;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
+}
+.contacth4.color {
+    color: #89FF0D;
 }
 #art4 span:hover { 
     color: #89FF0D;
@@ -300,53 +377,53 @@ h3 {
 #art4 .contact i {
     color: #BFBFBF;
     font-size: 3rem;
+    transition: 0.4s linear;
 }
 #art4 .contact i:hover {
-    color: #fff;
+    color: #89FF0D;
+    transform: rotate(360deg)
 }
 /* article 4 - cooperation */
 .cooperation {
     display: block;
     position: absolute;
-    top: 15%;
+    bottom: 2%;
     left: 50%;
     width: 50%;
-    height: 80%;
-    z-index: 1;
+    height: 58%;
     transform: translateX(-50%);
-    z-index: 1;
-    background-image: url(../img/contact.jpg);
-    background-position: top left;
-    background-repeat: no-repeat;
     font-size: 18px;
     line-height: 2;
-    color: #000;
-    opacity: 0.9;
+    color: #fff;
 }
-.cooperation.form {
-    display: none;
+.cooperation.form { display: none; }
+.input-icons i { position: absolute; } 
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+.input-icons input, textarea { 
+    width: 100%; 
+    padding-top: 6px; 
+    padding-bottom: 6px;
+    text-align: center; 
+} 
+.icon { 
+    padding: 10px; 
+    color: black; 
+    min-width: 50px; 
+    line-height: 40px;
+    text-align: center; 
+} 
+input[type="submit"] {
+    width: 20%;
+    margin-left: calc(100% - 60%);
+    cursor: pointer;
 }
-form {
-    margin-top: 22%;
+input[type="submit"]:hover {
+    background-color: #89FF0D;
 }
-input[type = "mail"],input[type = "tel"] {
-    display: inline-block;
-    width: 40%;
-    margin-right: 50px;
-}
-textarea, input[type="text"], input[type="submit"] {
-    display: block;
-}
-input, textarea {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: transparent;
-    color: #000;
-    padding: 1px;
-    margin-top: 5px;
-    border: 0.5px solid black;
-}
+ 
 /* article 4 - cooperation - end */
 /* article 4 - end */
 
@@ -359,6 +436,7 @@ footer h5 {
     color: #BAC8D9;
     text-align: right;
     font-size: 15px;
+    padding-bottom: 25px;
 }
 /* footer-end */
 
@@ -395,14 +473,14 @@ footer h5 {
     }
 
     #art2 {
-        height: 100vh;
+        height: 70vh;
     }
     #art2 i {
         font-size: 5rem;
     }
     #art2 h3 {
         padding-top: 5%;
-        padding-bottom: 8%;
+        padding-bottom: 2%;
     }
     #art2 img.ajax {
         width: 70px;
