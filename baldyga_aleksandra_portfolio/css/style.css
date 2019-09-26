@@ -244,123 +244,35 @@ h3 {
     font-weight: 600;
 }
 
-
 /* article 2 */
 #art2 i {
     font-size: 2rem;
     cursor: pointer;
+    transition: 1s; 
 }
+#art2 img { 
+    width: 30%;
+} 
 #art2 h4 {
     padding-top: 10%;
     padding-bottom: 10%;
     font-size: 1rem;
 }
-/* article 2  animation */
-#art2 .fa-html5 { 
-    animation: htmlColor 5s linear infinite;
-}
-@keyframes htmlColor {
-    to {
-        color: #e34f26;
-    }
-}
-#art2 .fa-css3-alt { 
-    animation: cssColor 5s linear infinite;
-}
-@keyframes cssColor {
-    to {
-        color: #2E77BB; 
-    }
-}
-#art2 .fa-js { 
-    animation: jsColor 5s linear infinite;
-}
-@keyframes jsColor {
-    to {
-        color: #F0DB4f; 
-    }
-}
-#art2 .fa-git { 
-    animation: gitColor 5s linear infinite;
-}
-@keyframes gitColor {
-    to {
-        color: #f1502f; 
-    }
-}
-#art2 img.ajax {
-    width: 35px;
-    height: 35px;
-    animation: ajaxColor 5s linear infinite;
-}
-@keyframes ajaxColor {
-    to {
-    opacity: 0.7;
-}
-}
-#art2 img.jquery {
-    width: 70px;
-    height: 80px;
-    animation: jqColor 7s 1s linear infinite;
-}
-@keyframes jqColor {
-    to {
-        opacity: 0.7;
-    }
-}
-#art2 .fa-bootstrap { 
-    animation: bootstrapColor 7s 1s linear infinite;
-}
-@keyframes bootstrapColor {
-    to {
-        color: #602c50;
-    }
-}
-#art2 .fa-react { 
-    animation: reactColor 7s 1s linear infinite;
-}
-@keyframes reactColor {
-    to {
-        color: #61dbfb; 
-    }
-}
-#art2 .fa-wordpress {
-    animation: wordpressColor 7s 1s  linear infinite;
-}
-@keyframes wordpressColor {
-    to {
-        color: #00749C; 
-    }
-}
-#art2 .fa-sass { 
-    animation: sassColor 5s linear infinite;
-}
-@keyframes sassColor {
-    to {
-        color: #CD6799; 
-    }
-}
-#art2 .fa-gulp { 
-    animation: gulpColor 7s 1s linear infinite;
-}
-@keyframes gulpColor {
-    to {
-        color: #DB4446; 
-    }
-}
-#art2 .fa-thumbs-up:before { 
-    animation: moreColor 7s 1s linear infinite;
-}
-@keyframes moreColor {
-    to {
-        color: var(--pink); 
-    }
-}
+/* article 2  hover */
+#art2 .fa-html5:hover { color: #e34f26; }
+#art2 .fa-css3-alt:hover { color: #2E77BB; }
+#art2 .fa-js:hover { color: #F0DB4f; }
+#art2 .fa-git:hover { color: #f1502f; }
+.ajax:hover, .jQuery:hover { color: rgb(41, 41, 41); }
+#art2 .fa-bootstrap:hover { color: #602c50; }
+#art2 .fa-react:hover { color: #61dbfb; }
+#art2 .fa-wordpress:hover { color: #00749C; }
+#art2 .fa-sass:hover { color: #CD6799; }
+#art2 .fa-gulp:hover { color: #DB4446; }
 
 /* article 4 */
 #art4 {
     position: relative;
-    height: 100vh;
     background-color: var(--black);
     color: var(--white);
 }
@@ -368,8 +280,7 @@ h3 {
     text-align: center;
     font-weight: 900;
     font-size: 20px;
-    line-height: 65vh;
-    padding-bottom: 15%;
+    padding: 17%;
 }
 .contacth4.color {
     color: var(--green);
@@ -382,6 +293,7 @@ h3 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    padding-bottom: 5%;
 }
 #art4 .contact i {
     color: #BFBFBF;
@@ -398,10 +310,9 @@ h3 {
     position: absolute;
     bottom: 2%;
     left: 50%;
-    width: 80%;
+    width: 50%;
     height: 58%;
     transform: translateX(-50%);
-    font-size: 18px;
     line-height: 2;
     color: var(--white);
 }
@@ -411,11 +322,11 @@ h3 {
     width: 100%; 
     margin-bottom: 10px; 
 } 
+.input-icons input { text-align: center; }
 .input-icons input, textarea { 
     width: 100%; 
     padding-top: 6px; 
     padding-bottom: 6px;
-    text-align: center; 
 } 
 .icon { 
     padding: 20px 30px 10px 10px; 
@@ -436,7 +347,7 @@ input[type="submit"]:hover {
 /* footer */
 footer {
     background-color: var(--black);
-    padding: 50px 20px 1px 20px;
+    padding: 0 20px 1px;
 }
 footer h5 {
     color: var(--whitesmoke);
@@ -480,6 +391,10 @@ footer h5 {
     .more {
         padding: 0 20% 1% 20%; 
     }
+    .more i.fa-times-circle {
+        top: 9%;
+        right: 18%;
+    }
     .text3 {
         flex-basis: 45%;
     }
@@ -487,7 +402,7 @@ footer h5 {
         height: 70vh;
     }
     #art2 i {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #art2 h3 {
         padding-top: 5%;
@@ -503,12 +418,13 @@ footer h5 {
     }
     #art4 h4 {
         font-size: 35px;
-        line-height: 65vh;
+    }
+    #art4 .contact {
+        padding-bottom: 2%;
     }
     .cooperation {
-        width: 50%;
+        width: 25%;
     }
-
 }
 
 /* Portrait tablet to landscape and desktop */
