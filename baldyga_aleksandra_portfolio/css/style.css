@@ -274,11 +274,12 @@ h3 {
 #art1 h6, #art1 span {
     font-size: 14px;
 }
+
 /* article 2 */
 #art2 i {
     font-size: 2rem;
     cursor: pointer;
-    transition: 1s; 
+    transition: .5s; 
 }
 #art2 img { 
     width: 30%;

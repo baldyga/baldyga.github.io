@@ -1,0 +1,99 @@
+@import 'let';
+body { 
+    font-family: $fontFam;
+    color: $fontCol;
+    font-size: 10px;
+    section { 
+        background-image: url(../img/background.png);
+        padding-bottom: 7em;
+        background-size: cover;
+        div.p1 {
+            h1 { 
+                padding-top: 2.5em;
+                font-size: $h1;
+                i {
+                    color: $colY;
+                    font-size: 30px;
+                    padding-right: 1em;
+                }
+            }
+            h4 { 
+                padding-top: 2.5em;
+                font-size: $h4;
+                i {
+                    font-size: 20px;
+                    padding-right: 1em;
+                }
+            }
+            h3 {
+                font-size: $h3; 
+            }
+
+        }
+        div.p2 {
+            margin-left: 4em;
+            h2 { 
+                padding-top: 1em;
+                line-height: 2;
+                font-size: $h2;
+            span {
+                color: $colY;
+                }
+            }
+            h3 {
+                font-size: $h4; 
+                padding: 1em;
+            }
+            form {
+                background-color: $colB;
+            }
+            input {
+                @include inputStyle;
+                font-size: 12px;
+            }
+            input[type="submit"] {
+                width: 5em;
+                background-color: $colY;
+                margin-bottom: 1em;
+            }
+            textarea {
+                @include inputStyle;
+                font-size: $h4;
+            }
+        }
+    }
+    footer {
+        background-color: $colG;
+        padding-top: 5em;
+        h3 {
+            font-size: $h3; 
+            margin-top: 1em;
+            margin-bottom: 1em;
+            a {
+                color: #fff;
+            }
+        }
+        i {
+            font-size: 3em;
+            background-color: $colY;
+            padding: 0.3em;
+            color: black;
+        }
+        h4 {
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-size: $h4;
+        }
+
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    footer {
+    height: 35em;
+    }
+}
+// @media (min-width:1025px) and (max-width:1366px) {
+//     section {
+//         padding-bottom: 20em;
+//     }
+// }

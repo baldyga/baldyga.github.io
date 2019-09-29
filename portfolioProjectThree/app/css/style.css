@@ -1,0 +1,78 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 10px; }
+  body section {
+    background-image: url(../img/background.png);
+    padding-bottom: 7em;
+    background-size: cover; }
+    body section div.p1 h1 {
+      padding-top: 2.5em;
+      font-size: 25px; }
+      body section div.p1 h1 i {
+        color: #ecd407;
+        font-size: 30px;
+        padding-right: 1em; }
+    body section div.p1 h4 {
+      padding-top: 2.5em;
+      font-size: 14px; }
+      body section div.p1 h4 i {
+        font-size: 20px;
+        padding-right: 1em; }
+    body section div.p1 h3 {
+      font-size: 18px; }
+    body section div.p2 {
+      margin-left: 4em; }
+      body section div.p2 h2 {
+        padding-top: 1em;
+        line-height: 2;
+        font-size: 20px; }
+        body section div.p2 h2 span {
+          color: #ecd407; }
+      body section div.p2 h3 {
+        font-size: 14px;
+        padding: 1em; }
+      body section div.p2 form {
+        background-color: #001d8a; }
+      body section div.p2 input {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5em;
+        margin-top: 1em;
+        font-size: 12px; }
+      body section div.p2 input[type="submit"] {
+        width: 5em;
+        background-color: #ecd407;
+        margin-bottom: 1em; }
+      body section div.p2 textarea {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5em;
+        margin-top: 1em;
+        font-size: 14px; }
+  body footer {
+    background-color: #292929;
+    padding-top: 5em; }
+    body footer h3 {
+      font-size: 18px;
+      margin-top: 1em;
+      margin-bottom: 1em; }
+      body footer h3 a {
+        color: #fff; }
+    body footer i {
+      font-size: 3em;
+      background-color: #ecd407;
+      padding: 0.3em;
+      color: black; }
+    body footer h4 {
+      padding-top: 2em;
+      padding-bottom: 2em;
+      font-size: 14px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    height: 35em; } }
