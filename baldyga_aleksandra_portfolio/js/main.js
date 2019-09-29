@@ -36,15 +36,15 @@ $(document).on('scroll', function () {
     const windowHeight = $(window).height()
     const scrollValue = $(this).scrollTop();
 
-    const $art1 = $('.project.one');
+    const $art1 = $('div.mockup.p1');
     const art1FromTop = $art1.offset().top
     const art1Height = $art1.outerHeight()
 
-    const $art2 = $('.project.two');
+    const $art2 = $('div.mockup.p2');
     const art2FromTop = $art2.offset().top
     const art2Height = $art2.outerHeight()
   
-    const $art3 = $('.project.three');
+    const $art3 = $('div.mockup.p3');
     const art3FromTop = $art3.offset().top
     const art3Height = $art3.outerHeight()
   
@@ -63,6 +63,6 @@ $(document).on('scroll', function () {
   
   // clear
     if (scrollValue < 100) {
-      $('div.project').removeClass('active');
+      $('div.mockup').removeClass('active');
     }
   })

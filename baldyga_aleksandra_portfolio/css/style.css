@@ -377,16 +377,16 @@ h3 {
     clear: both;
     display: block;
 }
-.project.one {
+div.mockup.p1 {
     transform: translateX(-100vw);
 }
-.project.two {
+div.mockup.p2 {
     transform: translateX(-100vw);
 }
-.project.three {
+div.mockup.p3 {
     transform: translateX(100vw);
 }
-.project.one.active,.project.two.active,.project.three.active {
+div.mockup.p1.active,div.mockup.p2.active,div.mockup.p3.active {
     transform: translateX(0);
 }
 
