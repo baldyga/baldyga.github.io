@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap&subset=latin-ext"
 		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap&subset=latin-ext" 
+		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/d748266cc8.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +32,8 @@
 	<header>
 		<h1>Front-End Developer</h1>
 		<h2>Aleksandra Bałdyga</h2>
-		<button>Skills</button>
+		<br>
+		<p class="skills">HTML <span>::</span> CSS <span>::</span> JavaScript</p>
 		<i class="fas fa-angle-down"></i>
 	</header>
 
@@ -39,9 +42,9 @@
 			<h3>About me</h3>
 			<div class="myPic"></div>
 			<p class="text1">
-				I’m aspiring Front-End Developer. I have started with learning basics like HTML, CSS and JavaScript. I am gaining experience during courses, presence in programming events and project work. I use technologies SASS and GULP. I've got experience with: ReactJS, jQuery, Bootstrap, AJAX, WordPress, I can debug.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, esse aliquam! Adipisci dolorum dolorem enim ipsam veritatis repudiandae, blanditiis at itaque perferendis excepturi eum architecto beatae quis, ducimus ullam nobis?
 				<br>
-				<strong>Would you like to check my activity and quality of works on GitHub? Click below!</strong>
+				<strong>Would you like to check my activity?</strong>
 			</p>
 			<i class="fas fa-graduation-cap"></i>
 
@@ -49,27 +52,77 @@
 				<h3>Courses</h3>
 				<i class="fas fa-times-circle"></i>
 				<p class="text2">
-					Programming become an integral part of my day routine. I have started with watching YouTube channel and using Udemy.
-					<br>
-					Now I’m learning ReactJS and creating some project for practice.
+					I’m aspiring Front-End Developer. I have started with learning basics like HTML, CSS and JavaScript. I am gaining experience during courses, presence in programming events and project work. I use technologies SASS and GULP. I've got experience with: ReactJS, jQuery, Bootstrap, AJAX, WordPress, I can debug.
 				</p>
 				<hr>
-				<div class="courses">
-					<div class="text3">
-						<h6>Bootcamp - Akademia 108</h6>
-						20.07 - 14.09
-					</div>
-					<div class="text3">
-						<h6>Samuraj Programowania</h6>
-						<ol>
-							<li>September: React od podstaw</li>
-							<li>September: JavaScript, OOP</li>
-							<li>August:<a
-								href="https://www.udemy.com/certificate/UC-WHXM1DL6/?fbclid=IwAR3YifDQ0J1Ti5sdRO_jn29dK-R8J8J-QsoPqrOSvUObP2yt0J-KLHsoS8E"
-								target="_blank"> Zaawansowany kurs Front-end </a></li>
-						</ol>
-					</div>
-				</div>
+				<div class="accordion courses" id="accordionExample">
+						<div class="card">
+						  <div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+							  <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Bootcamp Akademia 108
+							  </button>
+							</h2>
+						  </div>
+					  
+						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+							  <div class="certificate academy"></div>
+							</div>
+						  </div>
+						</div>
+
+						<div class="card">
+								<div class="card-header" id="headingTwo">
+								  <h2 class="mb-0">
+									<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseTwo">
+									  Advanced Front - end 
+									</button>
+								  </h2>
+								</div>
+							
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								  <div class="card-body">
+									<div class="certificate udemy"></div>
+									<h6 class="text-center"><a href="https://www.udemy.com/certificate/UC-WHXM1DL6/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" target="_blank">Link:</a></h6>
+								  </div>
+								</div>
+							</div>
+
+							<div class="card">
+									<div class="card-header" id="headingThree">
+									  <h2 class="mb-0">
+										<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseThree">
+										  Java Script & React JS
+										</button>
+									  </h2>
+									</div>
+								
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+									  <div class="card-body">
+										  <h6 class="text-center">Java Script</h6>
+										  <span>Object-Oriented Programming</span>
+											<div class="progress">
+												
+												<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+											</div>
+											<br>
+											<h6 class="text-center">React JS</h6>
+											<span>Create React App
+											<br>
+											JSON :: API :: AJAX</span>
+												
+											
+											<div class="progress">
+														<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+											</div>
+									  </div>
+									</div>
+								</div>
+
+								
+						
+
 			</div>
 		</article>
 
@@ -157,7 +210,7 @@
 					</div>
 					<div class="input-icons">
 						<i class="fa fa-envelope icon"></i>
-						<input type="mail" name="mail" id="mail" placeholder="Email Adress:">
+						<input type="email" name="email" id="email" placeholder="Email Adress:">
 					</div>
 					<div class="input-icons">
 						<i class="fas fa-mobile-alt icon"></i>
@@ -178,7 +231,7 @@
 			<a href="https://github.com/baldyga" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="mailto:aleksandraa.baldyga@gmail.com"><i class="far fa-envelope"></i></a>
 		</div>
-		<h5>Aleksandra Bałdyga | &copy; 2019 r.</h5>
+		<h5>&copy; Aleksandra Bałdyga | September 2019, Warsaw, Poland</h5>
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
