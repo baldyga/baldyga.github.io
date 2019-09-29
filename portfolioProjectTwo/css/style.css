@@ -131,9 +131,8 @@ footer {
 
 @media (max-width: 768px) {
 	h1 {
-    padding-top: 40%;
-    }
-
+    padding-top: 35%;
+}
 	.container {
         max-width: 95%;
         margin-right: 7%;

@@ -368,8 +368,8 @@ h3 {
     background-position: center -50px;
 }
 .mockup.p3 {
-    background-image: url(../img/project1.jpg);
-    background-position: center -60px;
+    background-image: url(../img/project1.png);
+    background-position: center 0;
     margin-bottom: 0;
 }
 .clearfix::after {
@@ -377,14 +377,8 @@ h3 {
     clear: both;
     display: block;
 }
-div.mockup.p1 {
+div.mockup.p1, div.mockup.p2, div.mockup.p3  {
     transform: translateX(-100vw);
-}
-div.mockup.p2 {
-    transform: translateX(-100vw);
-}
-div.mockup.p3 {
-    transform: translateX(100vw);
 }
 div.mockup.p1.active,div.mockup.p2.active,div.mockup.p3.active {
     transform: translateX(0);
