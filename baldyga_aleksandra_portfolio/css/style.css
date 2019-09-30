@@ -19,7 +19,6 @@ html {
 
 body { 
     font-family: 'Lato', sans-serif; 
-    overflow-x: hidden
 }
 
 /* navigation */
@@ -97,41 +96,11 @@ header h1, h2 {
     text-align: center;
     color: var(--blue);
 }
-.fa-angle-down:before {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 600px;
-    left: 50%;
-    font-size: 30px;
-    color: rgb(243, 157, 180);
-    opacity: 0.0;
-    animation: angleDown 3s linear infinite;
-}
-@keyframes angleDown {
-    25% {
-        top: 640px; 
-        opacity: 0;
-    }
-    50% {
-        top: 650px;
-        opacity: 0.9;
-    }
-    75% {
-        top: 660px;
-        opacity: 0.8;
-    }
-    80% {
-        top: 670px;
-        opacity: 0.5;
-    }
-    100% {
-        top: 700px;
-        opacity: 0;
-    }
-}  
 
 /* --- SECTION --- */
-
+section {
+    overflow-x: hidden;
+}
 /* article 1 */
 #art1 { 
     background-color: var(--bgColor); 
@@ -164,7 +133,7 @@ h3 {
 }
 .fa-graduation-cap:before { 
     position: absolute;
-    top: 85%;
+    top: 95%;
     left: calc(50% - 25px);
     font-size: 40px;
     animation: shakes 5s linear infinite; 
@@ -176,8 +145,9 @@ h3 {
     font-size: 25px;
     color: #292A2B;
     top: 50%;
-    left: 96%;
+    left: 93%;
     cursor: pointer;
+    z-index: 1;
 }
 @keyframes shakes {
     0% {
@@ -379,9 +349,9 @@ div#accordionExample.accordion {
 .cooperation {
     display: block;
     position: absolute;
-    bottom: 5%;
+    bottom: 25%;
     left: 50%;
-    width: 50%;
+    width: 65%;
     height: 58%;
     transform: translateX(-50%);
     line-height: 2;
@@ -426,11 +396,11 @@ input[type="submit"]:hover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 .contact i {
     color: #BFBFBF;
-    font-size: 3rem;
+    font-size: 2rem;
     transition: 0.4s linear;
 }
 .contact i:hover {
@@ -446,10 +416,12 @@ footer h5 {
     text-align: right;
     font-size: 15px;
     padding-bottom: 25px;
+    text-align: center;
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+/* large desktop */
+@media (min-width: 992px) {
+    /* nav */
     .burger {
         top: 34%;
         font-size: 30px;
@@ -458,20 +430,20 @@ footer h5 {
         top: 34%;
         font-size: 20px;
     }
-
+    /* header */
     header {
         background-position: top, left;
     }
     header h2 {
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 5px;
     }
     header h1 {
-        font-size: 65px;
+        font-size: 55px;
         letter-spacing: 10px;
         padding-top: 54vh;
     }
-
+    /* art1 */
     #art1 div.myPic {
         width: 260px;
         height: 260px;
@@ -479,16 +451,10 @@ footer h5 {
     #art1 p.text1 {
         margin: 5% 15% 6% 15%;
     }
-    .more {
-        padding: 0 20% 1% 20%; 
+    .fa-graduation-cap:before {
+        top: 88%;
     }
-    .more i.fa-times-circle {
-        top: 9%;
-        right: 18%;
-    }
-    .text3 {
-        flex-basis: 45%;
-    }
+    /* art2 */
     #art2 {
         height: 70vh;
     }
@@ -499,14 +465,19 @@ footer h5 {
         padding-top: 5%;
         padding-bottom: 2%;
     }
+    /* art4 */
     #art4 h4 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .contact {
+        padding-bottom: 1%;
     }
     #art4 .contact {
         padding-bottom: 2%;
     }
     .cooperation {
         width: 25%;
+        height: 38%;
     }
     .certificate.academy {
         width: 29%;
@@ -518,32 +489,57 @@ footer h5 {
         left: calc(50% - 15%);
         z-index: 1;
     }
+    footer h5 {
+        text-align: right;
+    }
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+/* medium desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* header */
     header {
-        background-position: -250px, top;
+        background-position: -220px, top;
+    }
+    header h2 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    header h1 {
+        font-size: 55px;
+    }
+    p, a {
+        font-size: 22px;
+    }
+    /* art1 */
+    .fa-graduation-cap:before {
+        top: 93%;
+    }
+    /* art5 */
+    div#accordionExample.accordion {
+        padding-top: 5%;
+    }
+    /* art2 */
+    .fa-arrow-circle-up {
+        top: 60%;
+    }
+    /* art4 */
+    .cooperation {
+        bottom: 20%;
+    }
+    #art4 h4 {
+        font-size: 35px;
+    }
+    .input-icons input, textarea {
+        font-size: 21px;
     }
 };
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+/* tablet */
+@media (max-width: 768px) {
     
 };
 
-/* Landscape phones and down */
+/* mobile */
 @media (max-width: 480px) {
-    #art4 span {
-        animation: click 3s 3s linear infinite; 
-        cursor: pointer;
-    }
-    @keyframes click {
-        for{
-            color: var(--white);
-        }
-        to {
-            color: var(--green);
-        }
-    }
+   
 };
