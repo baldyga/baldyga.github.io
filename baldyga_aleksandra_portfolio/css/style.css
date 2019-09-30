@@ -305,11 +305,10 @@ div#accordionExample.accordion {
     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
-
-    transition: 1s;
 }
 .project {
     height: 100vh;
+    transition: 1s linear;
 }
 .mockup {
     width: 70%;
@@ -340,17 +339,20 @@ div#accordionExample.accordion {
     background-position: center 0;
     margin-bottom: 0;
 }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+.project.one, .project.three {
+    transform: translateX(100vw);
 }
-div.mockup.p1, div.mockup.p2, div.mockup.p3  {
+.project.two {
     transform: translateX(-100vw);
 }
-div.mockup.p1.active,div.mockup.p2.active,div.mockup.p3.active {
+.project.active {
     transform: translateX(0);
 }
+.clearfix::after {
+    content: "";
+    display: block;
+}
+
 
 /* article 4 */
 #art4 {

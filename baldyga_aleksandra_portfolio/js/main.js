@@ -27,32 +27,32 @@ $(document).on('scroll', function () {
     const windowHeight = $(window).height()
     const scrollValue = $(this).scrollTop();
 
-    const $art1 = $('div.mockup.p1');
-    const art1FromTop = $art1.offset().top
-    const art1Height = $art1.outerHeight()
+    const $mockup1 = $('.one');
+    const mockup1FromTop = $mockup1.offset().top
+    const mockup1Height = $mockup1.outerHeight()
 
-    const $art2 = $('div.mockup.p2');
-    const art2FromTop = $art2.offset().top
-    const art2Height = $art2.outerHeight()
+    const $mockup2 = $('.two');
+    const mockup2FromTop = $mockup2.offset().top
+    const mockup2Height = $mockup2.outerHeight()
   
-    const $art3 = $('div.mockup.p3');
-    const art3FromTop = $art3.offset().top
-    const art3Height = $art3.outerHeight()
+    const $mockup3 = $('.three');
+    const mockup3FromTop = $mockup3.offset().top
+    const mockup3Height = $mockup3.outerHeight()
   
   
-    if (scrollValue > art1FromTop + art1Height - windowHeight) {
-        $art1.addClass('active');
+    if (scrollValue > mockup1FromTop + mockup1Height / 2 - windowHeight) {
+        $mockup1.addClass('active');
     }
 
-    if (scrollValue > art2FromTop + art2Height - windowHeight) {
-      $art2.addClass('active');
+    if (scrollValue > mockup2FromTop + mockup2Height / 2 - windowHeight) {
+      $mockup2.addClass('active');
     }
   
-    if (scrollValue > art3FromTop + art3Height - windowHeight) {
-      $art3.addClass('active');
+    if (scrollValue > mockup3FromTop + mockup3Height / 2 - windowHeight) {
+      $mockup3.addClass('active');
     }
   // clear
     if (scrollValue < 100) {
-      $('div.mockup').removeClass('active');
+      $('div.project').removeClass('active');
     }
 })
