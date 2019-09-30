@@ -23,6 +23,7 @@
 		<ul>
 			<li></li>
 			<li><a href="#art1">About me</a></li>
+			<li><a href="#art5">Courses</a></li>
 			<li><a href="#art2">Skills</a></li>
 			<li><a href="#art3">Portfolio</a></li>
 			<li><a href="#art4">Contact</a></li>
@@ -41,106 +42,78 @@
 		<article id="art1">
 			<h3>About me</h3>
 			<div class="myPic"></div>
-			<p class="text1">
+			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, esse aliquam! Adipisci dolorum
 				dolorem enim ipsam veritatis repudiandae, blanditiis at itaque perferendis excepturi eum architecto
-				beatae quis, ducimus ullam nobis?
-				<br>
-				<strong>Would you like to check my activity?</strong>
+				beatae quis, ducimus ullam nobis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium,
+				numquam. Laudantium atque voluptatum blanditiis, reprehenderit molestiae quae iusto eveniet aliquam
+				tenetur reiciendis quod eaque animi, dolorum autem esse, suscipit sed?
 			</p>
 			<i class="fas fa-graduation-cap"></i>
+		</article>
 
-			<div class="more inactive">
-				<h3>Courses</h3>
-				<i class="fas fa-times-circle"></i>
-				<p class="text2">
-					I’m aspiring Front-End Developer. I have started with learning basics like HTML, CSS and JavaScript.
-					I am gaining experience during courses, presence in programming events and project work. I use
-					technologies SASS and GULP. I've got experience with: ReactJS, jQuery, Bootstrap, AJAX, WordPress, I
-					can debug.
-				</p>
-				<hr>
-				<div class="accordion courses" id="accordionExample">
-					<div class="card">
-						<div class="card-header" id="headingOne">
-							<h2 class="mb-0">
-								<button class="btn btn-dark" type="button" data-toggle="collapse"
-									data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									Bootcamp Akademia 108
-								</button>
-							</h2>
-						</div>
-
-						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-							data-parent="#accordionExample">
-							<div class="card-body">
-								<div class="certificate academy"></div>
-							</div>
-						</div>
+		<article id="art5">
+			<h3>Courses</h3>
+			<p>I’m aspiring Front-End Developer. I have started with learning basics like HTML, CSS and JavaScript.I am gaining experience during courses, presence in programming events and project work. I use technologies SASS and GULP. I've got experience with: ReactJS, jQuery, Bootstrap, AJAX, WordPress, I can debug.</p>
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingOne">
+						<h5 class="mb-0 skills">
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
+								Bootcamp Akademia 108
+							</button>
+						</h5>
 					</div>
 
-					<div class="card">
-						<div class="card-header" id="headingTwo">
-							<h2 class="mb-0">
-								<button class="btn btn-dark" type="button" data-toggle="collapse"
-									data-target="#collapseOne" aria-expanded="true" aria-controls="collapseTwo">
-									Advanced Front - End
-								</button>
-							</h2>
-						</div>
-
-						<div id="collapseOne" class="collapse show" aria-labelledby="headingTwo"
-							data-parent="#accordionExample">
-							<div class="card-body">
-								<div class="certificate udemy"></div>
-								<h6 class="text-center"><a
-										href="https://www.udemy.com/certificate/UC-WHXM1DL6/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email"
-										target="_blank">Link:</a></h6>
-							</div>
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+						data-parent="#accordionExample">
+						<div class="card-body">
+							<div class="certificate academy"></div>
 						</div>
 					</div>
-
-					<div class="card">
-						<div class="card-header" id="headingThree">
-							<h2 class="mb-0">
-								<button class="btn btn-dark" type="button" data-toggle="collapse"
-									data-target="#collapseOne" aria-expanded="true" aria-controls="collapseThree">
-									Java Script & React JS
-								</button>
-							</h2>
-						</div>
-
-						<div id="collapseOne" class="collapse show" aria-labelledby="headingThree"
-							data-parent="#accordionExample">
-							<div class="card-body">
-								<h6 class="text-center">Udemy: Java Script</h6>
-								<span>Object-Oriented Programming</span>
-								<div class="progress">
-
-									<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
-										style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%
-									</div>
-								</div>
-								<br>
-								<h6 class="text-center">Udemy: React JS</h6>
-								<span>Create React App
-									<br>
-									JSON :: API :: AJAX</span>
-
-
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
-										style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-
 				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h5 class="mb-0 skills">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Advanced Front - End</button>
+						</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<a href="https://www.udemy.com/certificate/UC-WHXM1DL6/?utm_campaign=email&utm_source=sendgrid.com&utm_medium=email" target="_blank"><div class="certificate udemy"></div></a>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingThree">
+						<h5 class="mb-0 skills">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Java Script & React JS</button>
+						</h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+						data-parent="#accordionExample">
+						<div class="card-body">
+							<h6>Udemy: Java Script & OOP</h6>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+									style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%
+								</div>
+							</div>
+							<br>
+							<h6>Udemy: React JS</h6>
+							<span>Create React App :: JSON :: API :: AJAX</span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+									style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</article>
 
 		<a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
@@ -218,18 +191,18 @@
 				<form action="https://formspree.io/aleksandraa.baldyga@gmail.com" method="POST">
 					<div class="input-icons">
 						<i class="fa fa-user icon"></i>
-						<input type="text" name="nameSurname" id="nameSurname" placeholder="Full Name">
+						<input type="text" name="nameSurname" id="nameSurname" placeholder="Full Name" required>
 					</div>
 					<div class="input-icons">
 						<i class="fa fa-envelope icon"></i>
-						<input type="email" name="email" id="email" placeholder="Email Adress:">
+						<input type="email" name="email" id="email" placeholder="Email Adress:" required>
 					</div>
 					<div class="input-icons">
 						<i class="fas fa-mobile-alt icon"></i>
-						<input type="tel" name="phone" id="phone" placeholder="Phone Number">
+						<input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
 					</div>
 					<textarea name="info" id="info"></textarea>
-					<input type="submit" value="Send">
+					<input type="submit" value="Send" required>
 				</form>
 			</div>
 		</article>

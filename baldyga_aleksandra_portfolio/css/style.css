@@ -22,7 +22,7 @@ body {
     overflow-x: hidden
 }
 
-/* -- navigation --  */
+/* navigation */
 nav {
     position: absolute;
     top: 25%;
@@ -68,7 +68,7 @@ nav a:hover {
     display: none; 
 }
 
-/* -- header -- */
+/* header */
 header {
     position: static;
     background-image: url(../img/clean-deskjpg.jpg);
@@ -92,7 +92,7 @@ header h1, h2 {
     font-weight: 300;
     letter-spacing: 5px;
 }
-header p.skills {
+.skills {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
     color: var(--blue);
@@ -131,12 +131,10 @@ header p.skills {
 }  
 
 /* --- SECTION --- */
-#art1, #art3 { 
-    background-color: var(--bgColor); 
-}
 
 /* article 1 */
 #art1 { 
+    background-color: var(--bgColor); 
     position: relative; 
 }
 h3 {
@@ -157,19 +155,18 @@ h3 {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 3%);
 }
-#art1 p.text1 {
+#art1 p, #art5 p {
     text-align: center;
     line-height: 2.5;
-    margin: 10% 15% 15% 15%;
+    margin: 2% 10% 6% 10%;
 }
 .fa-graduation-cap:before { 
     position: absolute;
     top: 85%;
     left: calc(50% - 25px);
     font-size: 40px;
-    cursor: pointer;
     animation: shakes 5s linear infinite; 
     color: #292A2B;
     opacity: 0.9;
@@ -221,71 +218,42 @@ h3 {
     }
 }
 
-
-.more {
-    display: block;
-    position: absolute;
-    line-height: 2;
-    top: 0;
-    z-index: 1;
-    font-size: 18px;
-    margin-top: 0;
-    color: var(--black);
-    background-color: var(--bgColor);
-    border: #292A2B 1px solid;
+/* article 5 */
+#art5 {
+    background-color: #E1E1E1;
 }
-.more.inactive { 
-    display: none; 
+#art5 p {
+    margin-bottom: 0;
 }
-.more p.text2 { 
-    text-align: center;
-    background-color:  rgba(14, 14, 14, 0.08);
-    padding: 3%;
+.card {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
-.more i.fa-times-circle {
-    position: absolute;
-    font-size: 25px;
-    top: 7%;
-    right: 3%;
+.btn-link {
+    color: var(--blue);
 }
-.more a { 
-    font-weight: 600;
-    color: #292A2B;
-    text-decoration: underline var(--pink); 
+div#accordionExample.accordion {
+    padding-bottom: 5%;
 }
-.courses {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: space-around;
-    align-content: flex-start;
-}
-.courses ol li  {
-    list-style-type: square;
-}
-.text3 {
-    flex-basis: 90%;
-    text-align: center;
-}
-.courses h6 {
-    font-size: 20px;
-    font-weight: 600;
+.btn-link:hover {
+    color: #00749C;
 }
 .certificate {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 50vh;
+    height: 35vh;
 }
 .certificate.academy {
     background-image: url(../img/certificate.jpg);
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
 }
 .certificate.udemy {
     background-image: url(../img/certificate1.jpg);
-}
-#art1 h6, #art1 span {
-    font-size: 14px;
 }
 
 /* article 2 */
@@ -537,6 +505,16 @@ footer h5 {
     }
     .cooperation {
         width: 25%;
+    }
+    .certificate.academy {
+        width: 29%;
+    }
+    .certificate.academy:hover {
+        transform: scale(2.5);
+        position: absolute;
+        top: 50%;
+        left: calc(50% - 15%);
+        z-index: 1;
     }
 }
 
