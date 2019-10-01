@@ -275,15 +275,17 @@ div#accordionExample.accordion {
 }
 .mockup.p1 {
     background-image: url(../img/project3.jpg);
+    width: 71%;
 }
 .mockup.p2 {
     background-image: url(../img/project2.jpg);
+    width: 228px;
 }
 .mockup.p3 {
     background-image: url(../img/project1.png);
+    width: 287px;
 }
 .mockup {
-    width: 95%;
     height: 53%;
     margin-right: auto;
     margin-left: auto;
@@ -455,17 +457,20 @@ footer h5 {
     }
     /* art3 */
     .mockup {
-        width: 70%;
         height: 85%;
+        background-size: cover;
     }
     .mockup.p1 {
         background-position: center -55px;
+        width: 70%;
     }
     .mockup.p2 {
         background-position: center -50px;
+        width: 70%;
     }
     .mockup.p3 {
         background-position: center 0;
+        width: 70%;
         margin-bottom: 0;
     }
     .project {
@@ -521,17 +526,20 @@ footer h5 {
     }
     /* art3 */
     .mockup {
-        width: 85%;
         height: 69%;
+        background-size: cover;
     }
     .mockup.p1 {
         background-position: -222px -25px;
+        width: 85%;
     }
     .mockup.p2 {
         background-position: -175px -56px;
+        width: 85%;
     }
     .mockup.p3 {
         background-position: -295px -30px;
+        width: 85%;
     }
     .project {
         height: 100vh;
