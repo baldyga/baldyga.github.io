@@ -76,6 +76,7 @@ header {
     background-position: -195px, left;
     text-align: center;
     height: 100vh;
+    overflow: hidden;
 }
 header h1 {   
     font-size: 40px;
@@ -505,9 +506,20 @@ footer h5 {
     .fa-graduation-cap:before {
         top: 93%;
     }
-    /* art5 */
-    div#accordionExample.accordion {
-        padding-top: 5%;
+
+    /* art3 */
+    .mockup {
+        width: 85%;
+        height: 69%;
+    }
+    .mockup.p1 {
+        background-position: -222px -25px;
+    }
+    .mockup.p2 {
+        background-position: -175px -56px;
+    }
+    .mockup.p3 {
+        background-position: -295px -30px;
     }
     /* art4 */
     .cooperation {
@@ -519,13 +531,11 @@ footer h5 {
     .input-icons input, textarea {
         font-size: 21px;
     }
+    /* art5 */
+    div#accordionExample.accordion {
+        padding-top: 5%;
+    }
 };
-
-/* tablet */
-@media (max-width: 767px) {
-    
-};
-
 /* mobile */
 @media (max-width: 480px) {
    
