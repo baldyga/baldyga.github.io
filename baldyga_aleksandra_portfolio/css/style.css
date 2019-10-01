@@ -420,6 +420,9 @@ footer h5 {
         top: 34%;
         font-size: 20px;
     }
+    a {
+        font-size: 18px;
+    }
     /* header */
     header {
         background-position: top, left;
