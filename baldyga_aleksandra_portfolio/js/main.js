@@ -1,6 +1,6 @@
 const times = document.querySelector('.fa-times');
 const bars = document.querySelector('.fa-bars');
-const spanContact = document.querySelector('.spnContact');
+const btnContact = document.querySelector('.btnContact');
 
 function navBurger() {
     const nav = document.querySelector('nav');
@@ -19,7 +19,7 @@ function form() {
     const h4 = document.querySelector('.contacth4');
     h4.classList.add('color');
 }
-spanContact.addEventListener('click', form);
+btnContact.addEventListener('click', form);
 
 // scroll 
 $(document).on('scroll', function () {

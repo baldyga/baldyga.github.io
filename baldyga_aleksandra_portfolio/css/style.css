@@ -140,15 +140,6 @@ h3 {
     color: #292A2B;
     opacity: 0.9;
 }
-.fa-arrow-circle-up {
-    position: sticky;
-    font-size: 25px;
-    color: #292A2B;
-    top: 50%;
-    left: 93%;
-    cursor: pointer;
-    z-index: 1;
-}
 @keyframes shakes {
     0% {
         transform: translateX(0)
@@ -340,12 +331,12 @@ div#accordionExample.accordion {
 .contacth4.color {
     color: var(--green);
 }
-#art4 span:hover { 
+.btnContact {
+    background-color: rgb(73, 72, 72);
     color: var(--green);
-    cursor: pointer;
+    border: 1px solid var(--green);
+    margin-left: 1%;
 }
-
-
 .cooperation {
     display: block;
     position: absolute;
@@ -518,10 +509,6 @@ footer h5 {
     div#accordionExample.accordion {
         padding-top: 5%;
     }
-    /* art2 */
-    .fa-arrow-circle-up {
-        top: 60%;
-    }
     /* art4 */
     .cooperation {
         bottom: 20%;
@@ -535,7 +522,7 @@ footer h5 {
 };
 
 /* tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
 };
 
