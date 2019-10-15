@@ -3,77 +3,126 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+    // colors
+    .intro button, .intro h1 {
+        color: white;
+    }
+    nav a, .intro h2, .rotate p, .intro i, .social a, article#art2 p {
+        color: rgb(182, 182, 182);
+    }
+    .intro button i, nav a:hover{
+        color: #FF4200;
+    }
 
 header {
     background-color: rgb(36, 34, 34);
     nav {
+        margin-top: 1%;
+        text-align: justify;
+        padding-bottom: 19%;
+        a:first-of-type {
+            color: #FF4200;
+        }
         a {
-            display: block;
-            color: white;
+            margin-top: 12%;
+            display: block; 
+        }
+        a:hover {
+            text-decoration: none;       
+        }
+        h3 {
+            font-size: 35px;
+            margin-left: 10%;
+            margin-bottom: 35%;
+            letter-spacing: 20px;
+            color: #FF4200;
         }
     }
     .intro {
         text-transform: uppercase;
         h1 {
-            font-size: 50px;
+            font-size: 55px;
             letter-spacing: 15px;
-            color: white;
-            margin-left: 30%;
-            margin-top: 3%;
+            margin-top: 15%;
         }
         h2 {
             font-size: 15px;
             letter-spacing: 2px;
-            color: rgb(182, 182, 182);
-            margin-left: 30%;
         }
         hr {
             border: none;
             height: 2px;
             background-color: #FF4200;
             width: 15%;
-            margin-left: 30%;
             margin-top: 3%;
         }
         button {
             background-color: transparent;
             text-transform: uppercase;
             border: none;
-            color: white;
             font-weight: 700;
             font-size: 12px;
-            margin-left: 30%;
             i {
-                color: #FF4200;
                 font-size: 15px;
                 margin-left: 5px;
             }
         }
         i {
-            color: white;
-            margin-left: 35%;
+            margin-left: 27%;
+            margin-top: 10%;
+        }
+        h1, h2, hr, button  {
+            margin-left: 20%;
         }
         .rotate {
-            background-color: yellow;
             transform: rotate(90deg);
+            width: 300px;
+            margin-left: 123px;
             p {
-                color: rgb(182, 182, 182);
-                margin-left: 38%;
+                margin-left: 25%;
+                margin-top: 30%;
                 font-size: 10px;
-                
+            }
+            hr {
+                background-color: rgb(182, 182, 182);
+                border: none;
+                height: 2px;
+                width: 60%;
             }
         }
-
     }
     .social {
         text-align: center;
-        a {
-            color: rgb(182, 182, 182);
-        }
+        margin-top: 12%;
         i { 
             display: block;
             font-size: 20px;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
+    }
+}
+article#art2 {
+    h1 {
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        margin-top: 20%;
+        margin-bottom: 15%;
+        span {
+            color: #FF4200;
+        }
+    }
+    hr, p {
+        width: 40%;
+        margin-left: 5%;
+    }
+    p {
+        font-size: 12px;
+        width: 55%;
+        padding-bottom: 16%;
     }
 }

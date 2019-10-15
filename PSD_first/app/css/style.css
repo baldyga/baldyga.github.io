@@ -3,58 +3,102 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
+.intro button, .intro h1 {
+  color: white; }
+
+nav a, .intro h2, .rotate p, .intro i, .social a, article#art2 p {
+  color: #b6b6b6; }
+
+.intro button i, nav a:hover {
+  color: #FF4200; }
+
 header {
   background-color: #242222; }
-  header nav a {
-    display: block;
-    color: white; }
+  header nav {
+    margin-top: 1%;
+    text-align: justify;
+    padding-bottom: 19%; }
+    header nav a:first-of-type {
+      color: #FF4200; }
+    header nav a {
+      margin-top: 12%;
+      display: block; }
+    header nav a:hover {
+      text-decoration: none; }
+    header nav h3 {
+      font-size: 35px;
+      margin-left: 10%;
+      margin-bottom: 35%;
+      letter-spacing: 20px;
+      color: #FF4200; }
   header .intro {
     text-transform: uppercase; }
     header .intro h1 {
-      font-size: 50px;
+      font-size: 55px;
       letter-spacing: 15px;
-      color: white;
-      margin-left: 30%;
-      margin-top: 3%; }
+      margin-top: 15%; }
     header .intro h2 {
       font-size: 15px;
-      letter-spacing: 2px;
-      color: #b6b6b6;
-      margin-left: 30%; }
+      letter-spacing: 2px; }
     header .intro hr {
       border: none;
       height: 2px;
       background-color: #FF4200;
       width: 15%;
-      margin-left: 30%;
       margin-top: 3%; }
     header .intro button {
       background-color: transparent;
       text-transform: uppercase;
       border: none;
-      color: white;
       font-weight: 700;
-      font-size: 12px;
-      margin-left: 30%; }
+      font-size: 12px; }
       header .intro button i {
-        color: #FF4200;
         font-size: 15px;
         margin-left: 5px; }
     header .intro i {
-      color: white;
-      margin-left: 35%; }
+      margin-left: 27%;
+      margin-top: 10%; }
+    header .intro h1, header .intro h2, header .intro hr, header .intro button {
+      margin-left: 20%; }
     header .intro .rotate {
-      background-color: yellow;
-      transform: rotate(90deg); }
+      transform: rotate(90deg);
+      width: 300px;
+      margin-left: 123px; }
       header .intro .rotate p {
-        color: #b6b6b6;
-        margin-left: 38%;
+        margin-left: 25%;
+        margin-top: 30%;
         font-size: 10px; }
+      header .intro .rotate hr {
+        background-color: #b6b6b6;
+        border: none;
+        height: 2px;
+        width: 60%; }
   header .social {
-    text-align: center; }
-    header .social a {
-      color: #b6b6b6; }
+    text-align: center;
+    margin-top: 12%; }
     header .social i {
       display: block;
       font-size: 20px;
-      margin-top: 1rem; }
+      margin-top: 1.5rem; }
+
+article#art2 h1 {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  margin-top: 20%;
+  margin-bottom: 15%; }
+  article#art2 h1 span {
+    color: #FF4200; }
+
+article#art2 hr, article#art2 p {
+  width: 40%;
+  margin-left: 5%; }
+
+article#art2 p {
+  font-size: 12px;
+  width: 55%;
+  padding-bottom: 16%; }
