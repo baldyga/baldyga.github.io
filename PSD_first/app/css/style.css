@@ -143,3 +143,18 @@ article#art4 {
     height: 1px;
     background-color: #FF4200;
     margin-bottom: 25%; }
+
+@media (max-width: 450px) {
+  header nav a {
+    font-size: 10px; }
+  header nav h3 {
+    font-size: 25px;
+    margin-left: 0%;
+    margin-bottom: 55%;
+    margin-top: 50%;
+    letter-spacing: 5px; }
+  header .intro h1 {
+    margin-left: 10%;
+    font-size: 35px;
+    letter-spacing: 10px;
+    margin-top: 85%; } }
