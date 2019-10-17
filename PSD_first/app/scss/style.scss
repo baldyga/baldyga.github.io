@@ -6,6 +6,10 @@
 html {
     scroll-behavior: smooth;
 }
+h4 {
+    font-size: 30px;
+    letter-spacing: 6px;
+}
     // colors
     .intro button, .intro h1 {
         color: white;
@@ -13,8 +17,14 @@ html {
     nav a, .intro h2, .rotate p, .intro i, .social a, article#art2 p {
         color: rgb(182, 182, 182);
     }
-    .intro button i, nav a:hover{
+    .intro button i, nav a:hover, a:first-of-type, header nav h3, article#art2 h1 span  {
         color: #FF4200;
+    }
+    header .intro hr, article#art3 hr {
+        background-color: #FF4200;
+    }
+    header .intro .rotate hr {
+        background-color: rgb(182, 182, 182);
     }
 
 header {
@@ -23,9 +33,6 @@ header {
         margin-top: 1%;
         text-align: justify;
         padding-bottom: 19%;
-        a:first-of-type {
-            color: #FF4200;
-        }
         a {
             margin-top: 12%;
             display: block; 
@@ -38,7 +45,6 @@ header {
             margin-left: 10%;
             margin-bottom: 35%;
             letter-spacing: 20px;
-            color: #FF4200;
         }
     }
     .intro {
@@ -55,7 +61,6 @@ header {
         hr {
             border: none;
             height: 2px;
-            background-color: #FF4200;
             width: 15%;
             margin-top: 3%;
         }
@@ -87,7 +92,6 @@ header {
                 font-size: 10px;
             }
             hr {
-                background-color: rgb(182, 182, 182);
                 border: none;
                 height: 2px;
                 width: 60%;
@@ -104,6 +108,7 @@ header {
         }
     }
 }
+
 article#art2 {
     h1 {
         font-size: 42px;
@@ -112,9 +117,6 @@ article#art2 {
         text-transform: uppercase;
         margin-top: 20%;
         margin-bottom: 15%;
-        span {
-            color: #FF4200;
-        }
     }
     hr, p {
         width: 40%;
@@ -124,5 +126,52 @@ article#art2 {
         font-size: 12px;
         width: 55%;
         padding-bottom: 16%;
+    }
+}
+article#art3 {
+    background-color: beige;
+    text-transform: uppercase;
+    h4 {
+        margin-top: 40%;
+        margin-left: 25%;
+    }
+    hr {
+        margin-left: 25%;
+        width: 65%;
+        height: 1px;
+        margin-bottom: 25%;
+    }
+    h5 {
+        margin-left: 25%;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin-top: 5%;
+    }
+    .photography {
+        h5 {
+            margin-top: 80%;
+        }
+        p {
+            margin-left: 25%;
+            line-height: 2;
+            width: 45%;
+            text-transform: none;
+            font-size: 8px;
+            padding-bottom: 6%;
+        }
+    }
+}
+article#art4 {
+    text-transform: uppercase;
+    h4 {
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+    hr {
+        margin-left: 5%;
+        width: 35%;
+        height: 1px;
+        background-color: #FF4200;
+        margin-bottom: 25%;
     }
 }

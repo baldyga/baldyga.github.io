@@ -6,14 +6,24 @@
 html {
   scroll-behavior: smooth; }
 
+h4 {
+  font-size: 30px;
+  letter-spacing: 6px; }
+
 .intro button, .intro h1 {
   color: white; }
 
 nav a, .intro h2, .rotate p, .intro i, .social a, article#art2 p {
   color: #b6b6b6; }
 
-.intro button i, nav a:hover {
+.intro button i, nav a:hover, a:first-of-type, header nav h3, article#art2 h1 span {
   color: #FF4200; }
+
+header .intro hr, article#art3 hr {
+  background-color: #FF4200; }
+
+header .intro .rotate hr {
+  background-color: #b6b6b6; }
 
 header {
   background-color: #242222; }
@@ -21,8 +31,6 @@ header {
     margin-top: 1%;
     text-align: justify;
     padding-bottom: 19%; }
-    header nav a:first-of-type {
-      color: #FF4200; }
     header nav a {
       margin-top: 12%;
       display: block; }
@@ -32,8 +40,7 @@ header {
       font-size: 35px;
       margin-left: 10%;
       margin-bottom: 35%;
-      letter-spacing: 20px;
-      color: #FF4200; }
+      letter-spacing: 20px; }
   header .intro {
     text-transform: uppercase; }
     header .intro h1 {
@@ -46,7 +53,6 @@ header {
     header .intro hr {
       border: none;
       height: 2px;
-      background-color: #FF4200;
       width: 15%;
       margin-top: 3%; }
     header .intro button {
@@ -72,7 +78,6 @@ header {
         margin-top: 30%;
         font-size: 10px; }
       header .intro .rotate hr {
-        background-color: #b6b6b6;
         border: none;
         height: 2px;
         width: 60%; }
@@ -91,8 +96,6 @@ article#art2 h1 {
   text-transform: uppercase;
   margin-top: 20%;
   margin-bottom: 15%; }
-  article#art2 h1 span {
-    color: #FF4200; }
 
 article#art2 hr, article#art2 p {
   width: 40%;
@@ -102,3 +105,41 @@ article#art2 p {
   font-size: 12px;
   width: 55%;
   padding-bottom: 16%; }
+
+article#art3 {
+  background-color: beige;
+  text-transform: uppercase; }
+  article#art3 h4 {
+    margin-top: 40%;
+    margin-left: 25%; }
+  article#art3 hr {
+    margin-left: 25%;
+    width: 65%;
+    height: 1px;
+    margin-bottom: 25%; }
+  article#art3 h5 {
+    margin-left: 25%;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 5%; }
+  article#art3 .photography h5 {
+    margin-top: 80%; }
+  article#art3 .photography p {
+    margin-left: 25%;
+    line-height: 2;
+    width: 45%;
+    text-transform: none;
+    font-size: 8px;
+    padding-bottom: 6%; }
+
+article#art4 {
+  text-transform: uppercase; }
+  article#art4 h4 {
+    margin-left: 5%;
+    margin-top: 20%; }
+  article#art4 hr {
+    margin-left: 5%;
+    width: 35%;
+    height: 1px;
+    background-color: #FF4200;
+    margin-bottom: 25%; }
