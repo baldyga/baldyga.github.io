@@ -83,11 +83,20 @@ h4 {
   color: #343a40;
   text-transform: uppercase;
 }
+p.dark-grey-text {
+  padding: 25px;
+}
+/* ul {
+  margin-left: 35px;
+} */
+.part {
+  margin-bottom: 8%;
+}
 
 /* section article male */
 /* section article female */
 article#femaleDog img {
-  margin-top: 15%;
+  margin-top: 20%;
 }
 /* section article puppies */
 /* article - breed  */
