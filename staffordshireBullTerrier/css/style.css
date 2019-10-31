@@ -28,6 +28,14 @@ h4 {
   text-transform: uppercase;
   padding-top: 15%;
 }
+h5 {
+  font-size: 26px;
+  font-family: 'Lobster Two', cursive; 
+  color: #F29188;
+}
+h5 span {
+  color: white;
+}
 h6 {
   margin-bottom: 2%;
   font-size: 13px;
@@ -152,6 +160,36 @@ article.logo {
   height: 20vh;
   background-image: url(../img_other/Screenshot\ 2019-10-26\ at\ 16.56.43.png);
   background-size: contain;
+}
+form {
+  background-color: #09272B;
+}
+input, textarea {
+  text-transform: uppercase;
+  font-size: 10px;
+  background-color: transparent;
+  padding: 5px;
+  border: 1px solid rgb(148, 148, 148);
+}
+::placeholder {
+  color: whitesmoke;
+}
+input {
+  width: 38.5%;
+  margin-bottom: 2%;
+}
+input[type="submit"] {
+  background-color: #F29188;
+  color: whitesmoke;
+  width: 10%;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: teal;
+}
+textarea {
+  width: 40%;
+  height: 15vh;
 }
 /* footer */
 footer {
