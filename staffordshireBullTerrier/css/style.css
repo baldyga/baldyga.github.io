@@ -101,6 +101,9 @@ a.text-light:focus, a.text-light:hover {
   background-image: url(../img/bgc.png);
   background-size: contain;
 }
+.breedingContent {
+  padding-left: 50px;
+}
 strong {
   line-height: 2;
   font-weight: 700;
