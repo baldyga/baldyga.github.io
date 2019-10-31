@@ -59,7 +59,7 @@ a.text-light:focus, a.text-light:hover {
   border: 7px solid white;
 }
 .imgFamily.dad {
-  background-image: url(../img/aboutUs.jpg);
+  background-image: url(../img_about/about1.jpg);
   position: relative;
   width: 260px;
   height: 260px;
@@ -67,7 +67,7 @@ a.text-light:focus, a.text-light:hover {
   left: calc(50% - 130px); 
 }
 .imgFamily.bro {
-  background-image: url(../img/boy.jpg);
+  background-image: url(../img_about/about3.jpg);
   position: absolute;
   width: 220px;
   height: 220px;
@@ -76,7 +76,7 @@ a.text-light:focus, a.text-light:hover {
   left: 57%; 
 }
 .imgFamily.sis {
-  background-image: url(../img/girl.jpg);
+  background-image: url(../img_about/about2.jpg);
   position: absolute;
   width: 220px;
   height: 220px;
@@ -98,7 +98,7 @@ a.text-light:focus, a.text-light:hover {
 .breeding {
   padding-left: 0;
   padding-right: 0;
-  background-image: url(../img/bgc.png);
+  background-image: url(../img_other/bgc.png);
   background-size: contain;
 }
 .breedingContent {
