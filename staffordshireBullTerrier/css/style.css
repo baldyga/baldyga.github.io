@@ -18,18 +18,19 @@ h2 {
   letter-spacing: 2px;
 }
 h3 {
-  padding-top: 6%;
+  padding-top: 8%;
   font-family: 'Lobster Two', cursive; 
   text-align: center;
 }
 h4 {
-  font-size: 18px;
+  font-size: 17px;
   color: aliceblue;
   text-transform: uppercase;
-  padding-top: 15%;
+  padding-top: 6%;
 }
 h5 {
-  font-size: 26px;
+  padding-top: 6%;
+  font-size: 30px;
   font-family: 'Lobster Two', cursive; 
   color: #F29188;
 }
@@ -155,14 +156,12 @@ article#breed a:hover {
 article#gallery>h3 {
   margin-bottom: 3%;
 }
-article.logo {
-  width: 100vw;
-  height: 20vh;
-  background-image: url(../img_other/Screenshot\ 2019-10-26\ at\ 16.56.43.png);
-  background-size: contain;
-}
 form {
-  background-color: #09272B;
+  background-image: url(../img_other/formBgc.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 5%;
+  height: 100vh;
 }
 input, textarea {
   text-transform: uppercase;
