@@ -38,7 +38,7 @@ h5 span {
   color: white;
 }
 h6 {
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   font-size: 13px;
 }
 /* nav */
@@ -176,7 +176,7 @@ form {
   background-size: cover;
   background-position: center;
   margin-top: 5%;
-  height: 100vh;
+  height: 55vh;
 }
 input, textarea {
   text-transform: uppercase;
@@ -185,24 +185,31 @@ input, textarea {
   padding: 5px;
   border: 1px solid rgb(148, 148, 148);
 }
+.right {
+  text-align: center;
+}
+.left {
+  text-align: center;
+}
 ::placeholder {
   color: whitesmoke;
 }
 input {
-  width: 38.5%;
-  margin-bottom: 2%;
+  width: 85%;
+  margin-bottom: 5%;
 }
+
 input[type="submit"] {
   background-color: #F29188;
   color: whitesmoke;
-  width: 10%;
+  width: 25%;
   border: none;
 }
 input[type="submit"]:hover {
   background-color: teal;
 }
 textarea {
-  width: 40%;
+  width: 84%;
   height: 15vh;
 }
 
@@ -261,6 +268,27 @@ footer hr {
   .footer-copyright {
     text-align: right;
   }
+  .right {
+    text-align: right;
+  }
+  .left {
+    text-align: left;
+  }
+  input {
+    width: 38.5%;
+    margin-bottom: 2%;
+  }
+  textarea {
+    width: 40%;
+    height: 15vh;
+  }
+  input[type="submit"] {
+    width: 10%;
+  }
+  form {
+    height: 100vh;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -319,6 +347,12 @@ footer hr {
     margin-left: auto;
     text-align: justify;
   }
+  .right {
+    text-align: right;
+  }
+  .left {
+    text-align: left;
+  }
   .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -339,4 +373,19 @@ footer hr {
   .footer-copyright {
     text-align: right;
   }
+  input {
+    width: 38.5%;
+    margin-bottom: 2%;
+  }
+  textarea {
+    width: 40%;
+    height: 15vh;
+  }
+  input[type="submit"] {
+    width: 10%;
+  }
+  form {
+    height: 100vh;
+  }
+  
 }
