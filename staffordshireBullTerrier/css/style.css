@@ -66,6 +66,7 @@ a.text-light:focus, a.text-light:hover {
   height: 100vh;
   margin-bottom: 0; 
 }
+
 /* article - about  */
 #about {
   background-color: #f4f4f4;
@@ -80,31 +81,32 @@ a.text-light:focus, a.text-light:hover {
 .imgFamily.dad {
   background-image: url(../img_about/about1.jpg);
   position: relative;
-  width: 260px;
-  height: 260px;
-  top: calc(50% - 130px);
-  left: calc(50% - 130px); 
+  width: 180px;
+  height: 180px;
+  top: calc(50% - 90px);
+  left: calc(50% - 90px); 
 }
 .imgFamily.bro {
   background-image: url(../img_about/about3.jpg);
   position: absolute;
-  width: 220px;
-  height: 220px;
-  background-position: -75px 0;
+  width: 150px;
+  height: 150px;
+  background-position: -65px 0;
   margin-top: -15%;
-  left: 57%; 
+  right: 10%;
 }
 .imgFamily.sis {
   background-image: url(../img_about/about2.jpg);
   position: absolute;
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   margin-top: -15%;
-  left: 26%; 
+  left: 10%; 
 }
 .textAbout {
-  margin: 5% 10% 0 10%; 
+  margin: 35% 10% 0 10%; 
 }
+
 .info {
   width: 500px;
   height: 300px;
@@ -114,14 +116,27 @@ a.text-light:focus, a.text-light:hover {
   padding: 0!important;
 }
 /* section article: male, female, puppies */ 
-.breeding {
-  padding-left: 0;
+.col-sm-7 {
   padding-right: 0;
+  padding-left: 0;
+}
+ul.dogExhibitions {
+  padding: 5%;
+}
+.breeding {
   background-image: url(../img_other/bgc.png);
   background-size: contain;
 }
-.breedingContent {
-  padding-left: 50px;
+ul {
+  list-style-type: none;
+}
+.container {
+  text-align: center;
+  font-size: 12px;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
 }
 strong {
   line-height: 2;
@@ -140,8 +155,6 @@ article#breed a:hover {
   padding: 25px;
 }
 
-
-
 /* article - gallery */
 .gallery .img-fluid {
   margin-bottom: 7%;
@@ -156,6 +169,8 @@ article#breed a:hover {
 article#gallery>h3 {
   margin-bottom: 3%;
 }
+
+/* form */
 form {
   background-image: url(../img_other/formBgc.png);
   background-size: cover;
@@ -190,6 +205,7 @@ textarea {
   width: 40%;
   height: 15vh;
 }
+
 /* footer */
 footer {
   background-color: #09272B;
@@ -208,7 +224,6 @@ footer hr {
 .footer-copyright {
   font-size: 14px;
 }
-
 .fab {
   font-size: 20px;
   margin-right: 3%;
@@ -259,17 +274,69 @@ footer hr {
   .navbar-brand {  
     margin-left: 2%;
     margin-top: .5%;
-    font-size: 30px; }
-    .img-fluid {
-      padding: 0;
-    }
-    .social {
-      height: 25%;
-    }
-    .social i {
-      margin-right: 10%;
-    }
-    .footer-copyright {
-      text-align: right
-    };
+    font-size: 30px; 
+  }
+  /* article - about  */
+  .imgFamily.dad {
+    width: 260px;
+    height: 260px;
+    top: calc(50% - 130px);
+    left: calc(50% - 130px); 
+  }
+  .imgFamily.bro {
+    width: 220px;
+    height: 220px;
+    background-position: -75px 0;
+    left: 57%; 
+  }
+  .imgFamily.sis {
+    width: 220px;
+    height: 220px;
+    left: 26%; 
+  }
+  .textAbout {
+    margin: 5% 10% 0 10%; 
+  }
+  ul {
+    list-style-type: disc;
+  }
+  ul.dogExhibitions {
+    padding: 0;
+  }
+  .img-fluid {
+    padding: 0;
+  }
+  .col-sm-7 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .breeding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .breedingContent {
+    padding-left: 50px;
+  }
+  .social {
+    height: 25%;
+  }
+  .social i {
+    margin-right: 10%;
+  }
+  .footer-copyright {
+    text-align: right;
+  }
 }
