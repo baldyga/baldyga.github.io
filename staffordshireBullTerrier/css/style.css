@@ -231,7 +231,7 @@ a.text-light:focus, a.text-light:hover {
 .jumbotron {
   background: url(../img/photo2.jpg) fixed center no-repeat;
   background-size: cover;
-  background-position: -350px 45px;
+  background-position: center center;
   height: 85vh;
   margin-bottom: 0;
 }
