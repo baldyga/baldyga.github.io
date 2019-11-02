@@ -182,6 +182,7 @@ h2 {
   letter-spacing: 2px;
 }
 h2.preloader {
+  font-size: 15px;
   margin-left: 0;
   margin-top: 2%;
   margin-bottom: 2%;
@@ -211,6 +212,10 @@ h6 {
   font-size: 13px;
 }
 /* nav */
+ul.nav {
+  margin-right: auto;
+  margin-left: auto;
+}
 .nav a {
   font-size: 11px; 
 }
@@ -229,10 +234,10 @@ a.text-light:focus, a.text-light:hover {
 
 /* header */
 .jumbotron {
-  background: url(../img/photo2.jpg) fixed center no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 85vh;
+  background: url(../img/photo2.jpg) fixed no-repeat;
+  background-size: contain;
+  background-position: center 93px;
+  height: 42vh;
   margin-bottom: 0;
 }
 
@@ -417,6 +422,19 @@ footer hr {
   margin-top: 3%;
 }
 
+/* Small devices (phone, 360) */
+@media (max-width:360px) {
+  .nav a {
+    font-size: 9px;
+  }
+  .jumbotron {
+    background-position: center 90px;
+    height: 52vh;
+  }
+  h5 {
+    padding-top: 33%;
+  }
+}
 
   
 /* Medium devices (tablets, 768px and up) */
@@ -474,6 +492,11 @@ footer hr {
   }
   form {
     height: 100vh;
+  }
+  h2.preloader {
+    margin-left: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 
 }
@@ -583,6 +606,11 @@ footer hr {
   }
   form {
     height: 100vh;
+  }
+  h2.preloader {
+    margin-left: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   h3 {
     padding-top: 8%;
