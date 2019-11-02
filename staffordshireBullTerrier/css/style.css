@@ -166,6 +166,7 @@ div.spinner i:nth-child(8) {
   display: none;
 }
 /* Preloader - end */
+
 body {
   font-family: 'Lato', sans-serif; 
 }
@@ -186,7 +187,7 @@ h2.preloader {
   margin-bottom: 2%;
 }
 h3 {
-  padding-top: 8%;
+  padding-top: 28%;
   font-family: 'Lobster Two', cursive; 
   text-align: center;
 }
@@ -197,7 +198,7 @@ h4 {
   padding-top: 6%;
 }
 h5 {
-  padding-top: 6%;
+  padding-top: 28%;
   font-size: 30px;
   font-family: 'Lobster Two', cursive; 
   color: #F29188;
@@ -228,17 +229,28 @@ a.text-light:focus, a.text-light:hover {
 
 /* header */
 .jumbotron {
-  background: url(../img/photo1.jpg) fixed center no-repeat;
+  background: url(../img/photo2.jpg) fixed center no-repeat;
   background-size: cover;
-  background-position: center top;
-  height: 100vh;
-  margin-bottom: 0; 
+  background-position: -350px 45px;
+  height: 85vh;
+  margin-bottom: 0;
 }
 
 /* article - about  */
 #about {
   background-color: #f4f4f4;
-  padding-bottom: 10%; 
+  padding-bottom: 5%; 
+}
+#about img {
+  opacity: 0.5;
+  margin-top: 3%;
+  transform: rotate(90deg);
+  width: 18px;
+}
+#about img:nth-child(odd) {
+  margin-top: 7%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 .imgFamily {
   background-size: cover;
@@ -344,7 +356,7 @@ form {
   background-size: cover;
   background-position: center;
   margin-top: 5%;
-  height: 55vh;
+  height: 80vh;
 }
 input, textarea {
   text-transform: uppercase;
@@ -409,6 +421,13 @@ footer hr {
   
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width:991px) {
+  .jumbotron {
+    background: url(../img/photo1.jpg) fixed center no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    margin-bottom: 0; 
+  }
   .nav a {
     font-size: 16px;
   }
@@ -461,6 +480,13 @@ footer hr {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .jumbotron {
+    background: url(../img/photo1.jpg) fixed center no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+    margin-bottom: 0; 
+  }
   .nav a {
     font-size: 16px; }
     
@@ -501,6 +527,9 @@ footer hr {
   }
   .img-fluid {
     padding: 0;
+  }
+  #about img {
+    width: 30px;
   }
   .col-sm-7 {
     padding-right: 15px;
@@ -554,6 +583,12 @@ footer hr {
   }
   form {
     height: 100vh;
+  }
+  h3 {
+    padding-top: 8%;
+  }
+  h5 {
+    padding-top: 6%;
   }
   
 }
