@@ -297,8 +297,6 @@ a.text-light:focus, a.text-light:hover {
 }
 .container-fluid {
   width: 100%;
-  padding-right: 0; 
-  padding-left: 0;
 }
 ul.dogExhibitions {
   padding: 5%;
