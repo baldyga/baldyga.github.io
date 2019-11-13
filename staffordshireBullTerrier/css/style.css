@@ -355,6 +355,7 @@ form {
 }
 input, textarea {
   text-transform: uppercase;
+  color: whitesmoke;
   font-size: 10px;
   background-color: transparent;
   padding: 5px;

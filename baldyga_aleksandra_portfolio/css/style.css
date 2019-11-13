@@ -286,6 +286,14 @@ div#accordionExample.accordion {
     background-image: url(../img/project1.png);
     width: 287px;
 }
+.mockup.p4 {
+    background-image: url(../img/project4.png);
+    width: 287px;
+}
+.mockup.p5 {
+    background-image: url(../img/project5.png);
+    width: 287px;
+}
 .mockup {
     height: 53%;
     margin-right: auto;
@@ -301,10 +309,11 @@ div#accordionExample.accordion {
     text-align: center;
     color: var(--white);
 }
-.project.one, .project.three {
+
+.project.one, .project.three, .project.five {
     transform: translateX(100vw);
 }
-.project.two {
+.project.two, .project.four {
     transform: translateX(-100vw);
 }
 .project.active {
@@ -314,7 +323,6 @@ div#accordionExample.accordion {
     content: "";
     display: block;
 }
-
 
 /* article 4 */
 #art4 {
@@ -477,6 +485,14 @@ footer h5 {
         width: 70%;
         margin-bottom: 0;
     }
+    .mockup.p4 {
+        background-position: center 0;
+        width: 70%;
+    }
+    .mockup.p5 {
+        background-position: center 0;
+        width: 70%;
+    }
     .project {
         height: 100vh;
     }
@@ -544,6 +560,14 @@ footer h5 {
         background-position: -295px -30px;
         width: 85%;
     }
+    .mockup.p4 {
+        background-position: center;
+        width: 85%;
+    }
+    .mockup.p5 {
+        background-position: center;
+        width: 85%;
+    }
     .project {
         height: 100vh;
     }
@@ -594,6 +618,14 @@ footer h5 {
         width: 85%;
     }
     .mockup.p3 {
+        background-position: center 0;
+        width: 85%;
+    }
+    .mockup.p4 {
+        background-position: center 0;
+        width: 85%;
+    }
+    .mockup.p5 {
         background-position: center 0;
         width: 85%;
     }
