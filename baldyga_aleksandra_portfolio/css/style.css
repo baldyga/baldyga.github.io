@@ -261,14 +261,12 @@ div#accordionExample.accordion {
 
 /* article 3 */
 #art3 {
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(15%, rgba(184,184,184,1)), color-stop(25%, rgba(130,130,130,1)), color-stop(31%, rgba(110,106,99,1)), color-stop(37%, rgba(78,76,70,1)), color-stop(63%, rgba(66,59,51,1)), color-stop(77%, rgba(8,15,23,1)), color-stop(84%, rgba(2,4,8,1)), color-stop(99%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(184,184,184,1) 15%, rgba(130,130,130,1) 25%, rgba(110,106,99,1) 31%, rgba(78,76,70,1) 37%, rgba(66,59,51,1) 63%, rgba(8,15,23,1) 77%, rgba(2,4,8,1) 84%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f4f4f4+0,a8a8a8+19,3a2b23+29,2a2e42+32,000000+47,000000+100 */
+    background: rgb(244,244,244); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(168,168,168,1) 19%, rgba(58,43,35,1) 29%, rgba(42,46,66,1) 32%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(168,168,168,1) 19%,rgba(58,43,35,1) 29%,rgba(42,46,66,1) 32%,rgba(0,0,0,1) 47%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(244,244,244,1) 0%,rgba(168,168,168,1) 19%,rgba(58,43,35,1) 29%,rgba(42,46,66,1) 32%,rgba(0,0,0,1) 47%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 .project {
     height: 50vh;
@@ -309,7 +307,6 @@ div#accordionExample.accordion {
     text-align: center;
     color: var(--white);
 }
-
 .project.one, .project.three, .project.five {
     transform: translateX(100vw);
 }
