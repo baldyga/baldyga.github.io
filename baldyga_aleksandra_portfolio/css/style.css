@@ -219,6 +219,9 @@ div#accordionExample.accordion {
 .certificate.udemy {
     background-image: url(../img/certificate1.jpg);
 }
+.certificate.udemyJS {
+    background-image: url(../img/certificateJS.png);
+}
 
 /* article 2 */
 #art2 i {
