@@ -222,6 +222,9 @@ div#accordionExample.accordion {
 .certificate.udemyJS {
     background-image: url(../img/certificateJS.png);
 }
+.certificate.carrots {
+    background-image: url(../img/cerCar.jpeg);
+}
 
 /* article 2 */
 #art2 i {
