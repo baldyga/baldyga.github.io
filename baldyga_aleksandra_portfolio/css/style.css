@@ -35,7 +35,7 @@ nav ul {
     flex-flow: row nowrap;
     justify-content: space-around;
 }
-li { 
+nav>ul>li { 
     list-style: none; 
 }
 nav ul li:hover { 
@@ -77,7 +77,6 @@ header {
     background-position: -195px, left;
     text-align: center;
     height: 100vh;
-    
     overflow: hidden;
 }
 header h1 {   
@@ -108,86 +107,84 @@ section {
 #art1 { 
     background-color: var(--bgColor); 
     position: relative; 
+    background-color: #f2f1ed; 
 }
-h3 {
+#art1 ol {
+    text-align: center;
+}
+#art1 ol li a {
+    color: #326647;
+    font-weight: bold;
+}
+#art1 ol li a:hover {
+    color: var(--blue);
+}
+#art1 p {
+    text-align: center;
+    line-height: 2.5;
+    margin: 2% 10% 6% 10%;
+    margin-bottom: 0;
+}
+h3, h4, h5{
     letter-spacing: 2px;
     font-size: 27px;
     padding-top: 30px;
     font-weight: 300;
     text-align: center;
 }
-#art1 div.myPic {
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    background-image: url(../img/me.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+#art1 h4 {
+    font-family: 'Kaushan Script', cursive;
+
+}
+#art1 h5 {
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+}
+.portfolioItems {
+    display: flex;
+    align-content: space-between;
+}
+.container {
+    margin:auto;
+}
+.portfolioItems a {
+    flex-basis: 30%;
+    height: 310px;
+    margin: 0;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 3%);
 }
-#art1 p, #art5 p {
-    text-align: center;
-    line-height: 2.5;
-    margin: 2% 10% 6% 10%;
+.portfolioItems img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.fa-graduation-cap:before { 
-    position: absolute;
-    top: 93%;
-    left: calc(50% - 25px);
-    font-size: 40px;
-    animation: shakes 5s linear infinite; 
-    color: #292A2B;
-    opacity: 0.9;
+
+.carrotsItems {
+    display: flex;
+    align-content: space-between;
 }
-@keyframes shakes {
-    0% {
-        transform: translateX(0)
-    }
-    90% {
-        transform: translateX(0)
-    }
-    91% {
-        transform: translateX(20px)
-    }
-    92% {
-        transform: translateX(-20px)
-    }
-    93% {
-        transform: translateX(20px)
-    }
-    94% {
-        transform: translateX(-20px)
-    }
-    95% {
-        transform: translateX(20px)
-    }
-    96% {
-        transform: translateX(-20px)
-    }
-    97% {
-        transform: translateX(20px)
-    }
-    98% {
-        transform: translateX(-20px)
-    }
-    99% {
-        transform: translateX(20px)
-    }
-    100% {
-        transform: translateX(0)
-    }
+.container {
+    margin:auto;
 }
+.carrotsItems a {
+    flex-basis: 100%;
+    height: 400px;
+    margin: 0;
+    position: relative;
+}
+.carrotsItems img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /* article 5 */
 #art5 {
     background-color: #E1E1E1;
-}
-#art5 p {
-    margin-bottom: 0;
 }
 .card {
     width: 80%;
@@ -449,15 +446,8 @@ footer h5 {
         padding-top: 54vh;
     }
     /* art1 */
-    #art1 div.myPic {
-        width: 260px;
-        height: 260px;
-    }
     #art1 p.text1 {
         margin: 5% 15% 6% 15%;
-    }
-    .fa-graduation-cap:before {
-        top: 88%;
     }
     /* art2 */
     #art2 {
@@ -541,10 +531,6 @@ footer h5 {
     }
     p, a {
         font-size: 22px;
-    }
-    /* art1 */
-    .fa-graduation-cap:before {
-        top: 93%;
     }
     /* art3 */
     .mockup {
