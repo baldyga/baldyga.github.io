@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
     --bgColor:  #F1EEEA;
     --black: #000;
@@ -12,15 +11,12 @@
     --whitesmoke: #BAC8D9;
     --blue: #0693AE;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body { 
     font-family: 'Lato', sans-serif; 
 }
-
 /* navigation */
 nav {
     position: absolute;
@@ -33,7 +29,7 @@ nav {
 nav ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 nav>ul>li { 
     list-style: none; 
@@ -94,10 +90,9 @@ header h1, h2 {
     letter-spacing: 5px;
 }
 .skills {
-    font-family: 'Fredericka the Great', cursive;
     text-align: center;
     color: var(--blue);
-}
+    font-family: 'Fredericka the Great', cursive;}
 
 /* --- SECTION --- */
 section {
@@ -107,27 +102,29 @@ section {
 #art1 { 
     background-color: var(--bgColor); 
     position: relative; 
-    background-color: #f2f1ed; 
+    /* background-color: #f2f1ed;  */
 }
 #art1 ol {
     text-align: center;
 }
 #art1 ol li a {
-    color: #326647;
+    color: var(--blue);
     font-weight: bold;
 }
 #art1 ol li a:hover {
-    color: var(--blue);
+    color: var(--pink);
 }
 #art1 p {
     text-align: center;
     line-height: 2.5;
-    margin: 2% 10% 6% 10%;
+    margin: 0 10% 6% 10%;
     margin-bottom: 0;
+}
+h3, h4 {
+    font-size: 27px;
 }
 h3, h4, h5{
     letter-spacing: 2px;
-    font-size: 27px;
     padding-top: 30px;
     font-weight: 300;
     text-align: center;
@@ -136,9 +133,8 @@ h3, h4, h5{
     font-family: 'Kaushan Script', cursive;
 
 }
-#art1 h5 {
+#art1 h5.italic {
     font-family: 'Kaushan Script', cursive;
-    font-family: 'Old Standard TT', serif;
     font-size: 18px;
 }
 .portfolioItems {
@@ -160,7 +156,6 @@ h3, h4, h5{
     object-fit: cover;
     object-position: center;
 }
-
 .carrotsItems {
     display: flex;
     align-content: space-between;
@@ -170,145 +165,50 @@ h3, h4, h5{
 }
 .carrotsItems a {
     flex-basis: 100%;
-    height: 400px;
     margin: 0;
     position: relative;
 }
 .carrotsItems img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
-
-
-/* article 5 */
-#art5 {
-    background-color: #E1E1E1;
-}
-.card {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.btn-link {
-    color: var(--blue);
-}
-div#accordionExample.accordion {
-    padding-bottom: 5%;
-}
-.btn-link:hover {
-    color: #00749C;
-}
-.certificate {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 35vh;
-}
-.certificate.academy {
-    background-image: url(../img/certificate.jpg);
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    cursor: pointer;
-}
-.certificate.udemy {
-    background-image: url(../img/certificate1.jpg);
-}
-.certificate.udemyJS {
-    background-image: url(../img/certificateJS.png);
-}
-.certificate.carrots {
-    background-image: url(../img/cerCar.jpeg);
-}
-
-/* article 2 */
-#art2 i {
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .5s; 
-}
-#art2 img { 
-    width: 30%;
-} 
-#art2 h4 {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    font-size: 1rem;
-}
-#art2 .fa-html5:hover { 
-    color: #e34f26; 
-}
-#art2 .fa-css3-alt:hover { 
-    color: #2E77BB; 
-}
-#art2 .fa-js:hover { 
-    color: #F0DB4f; 
-}
-#art2 .fa-git:hover { 
-    color: #f1502f; 
-}
-#art2 .fa-bootstrap:hover { 
-    color: #602c50; 
-}
-#art2 .fa-react:hover { 
-    color: #61dbfb; 
-}
-#art2 .fa-wordpress:hover { 
-    color: #00749C; 
-}
-#art2 .fa-sass:hover { 
-    color: #CD6799; 
-}
+/* article 1 section courses */
 
 /* article 3 */
 #art3 {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f4f4f4+0,a8a8a8+19,3a2b23+29,2a2e42+32,000000+47,000000+100 */
-    background: rgb(244,244,244); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(244,244,244,1) 0%, rgba(168,168,168,1) 19%, rgba(58,43,35,1) 29%, rgba(42,46,66,1) 32%, rgba(0,0,0,1) 47%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(244,244,244,1) 0%,rgba(168,168,168,1) 19%,rgba(58,43,35,1) 29%,rgba(42,46,66,1) 32%,rgba(0,0,0,1) 47%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(244,244,244,1) 0%,rgba(168,168,168,1) 19%,rgba(58,43,35,1) 29%,rgba(42,46,66,1) 32%,rgba(0,0,0,1) 47%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    background-color: #efedee;
 }
 .project {
     height: 50vh;
     transition: 1s linear;
 }
 .mockup.p1 {
-    background-image: url(../img/project3.jpg);
-    width: 71%;
+    background-image: url(../img/project/project4.png);
 }
 .mockup.p2 {
-    background-image: url(../img/project2.jpg);
-    width: 228px;
+    background-image: url(../img/project/project2.png);
 }
 .mockup.p3 {
-    background-image: url(../img/project1.png);
-    width: 287px;
+    background-image: url(../img/project/project3.png);
 }
 .mockup.p4 {
-    background-image: url(../img/project4.png);
-    width: 287px;
+    background-image: url(../img/project/project1.png);
 }
 .mockup.p5 {
     background-image: url(../img/project5.png);
-    width: 287px;
 }
 .mockup {
     height: 53%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .mockupInfo {
-    margin-right: 10%;
-    margin-left: 10%;
     text-align: center;
-    color: var(--white);
 }
 .project.one, .project.three, .project.five {
     transform: translateX(100vw);
