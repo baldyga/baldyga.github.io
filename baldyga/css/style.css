@@ -88,7 +88,6 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
-    height: 100vh;
 }
 #art1 div.whyPortfolio {
     position: absolute;
@@ -110,7 +109,6 @@ section {
 #art2 {
     position: relative; 
     background-color: #fffafa;
-    height: 100vh;
 }
 #art2 > div.art2Content {
     position: absolute;
@@ -158,7 +156,6 @@ section {
     background-image: url(../img/bgi/pexels-cottonbro-4065876.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 #art3 h3.skills {
     position: absolute;
@@ -221,10 +218,6 @@ section {
 }
 #art4 div.hobbyContent {
     position: absolute;
-    height: 30vh;
-    width: 40vw;
-    margin-left: calc(100% - 45%);
-    margin-top: calc(100% - 68%);
 }
 #art4 div.hobbyContent h1 {
     position: absolute;
@@ -334,8 +327,146 @@ footer h5 {
     font-size: 15px;
     text-align: center;
 }
+/*Media Query for IphoneX*/
+@media (max-width: 376px) {
+    /* .......... nav .......... */
+    a { 
+        font-size: 13px;}
+    nav {
+        width: 98vw;
+        height: 50px;
+        line-height: 50px;
+        top:35%;}
+    .burger {
+        font-size: 15px;
+        top:35%;}
+    /* .......... header .......... */
+    header {
+        background-position: 30%, 0;}
+    header h1 {   
+        font-size: 40px;
+        padding-top: 50vh;}
+    /* .......... fonts  .......... */
+    p {
+        font-size: 18px;
+        padding-left: 7%;
+        padding-right: 7%;}
+    h3 {
+        font-size: 40px;}
+    h4 {
+        font-size: 30px;}
+    h3, h5 {
+        letter-spacing: 2px;
+        padding-top: 30px;
+        font-weight: 300;
+        text-align: center;}
+    /* .......... article 1 .......... */
+    #art1 {
+         height: 60vh;}
+    #art1 div.whyPortfolio {
+        width: 76vw;
+        height: 48vh;
+        margin-top: calc(100% - 90%);
+        margin-left: calc(100% - 89%);
+        padding: 1% 3% 1% 3%; }
+    #art1 div.whyPortfolio h1 {
+        font-size: 30px ; }
+    #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
+        font-size: 20px; }
+
+    /* .......... article 2 .......... */
+    #art2 {
+        height: 60vh;}
+    #art2 > div.art2Content {
+        width: 92vw;}
+    #art2 > div.art2Content h2 {
+        font-size: 45px;}
+    #art1, #art2 p {
+        line-height: 1;}
+    #art2 div.welcomePhoto {
+        margin-top: calc(100% - 11%);
+        margin-left: calc(100% - 79%);
+        height: 40vh;
+        width: 58vw; }
+    #art2 p {
+        font-size: 18px;
+        padding-left: 5%;
+        padding-right: 5%;}
+    #art2 .contact i {
+        font-size: 1.5rem; }
+    /* .......... article 3 .......... */
+    #art3 {
+        height: 60vh;
+    }
+    #art3 div.abtContent {
+        margin-top: calc(100% - 50%);
+        margin-left: calc(100% - 92%);
+        width: 80vw;}
+    #art3 div.shadow {
+        height: 37vh;
+        margin-top: calc(100% - 50%);}
+    #art3 div.abtContent p {
+        line-height: 1.5;}
+    #art3 p {
+        font-size: 18px;
+        padding-left: 0;
+        padding-right: 0;}
+
+    #art3 h3.skills {
+        margin-top: 12%;
+        margin-right: 33%;
+        font-size: 45px;}
+    /* .......... article 4 .......... */
+    #art4 div.about h1 {
+        font-size: 30px;
+        line-height: 2; }
+    #art4 div.hobbyContent h1 {
+        font-size: 30px;}
+    #art4 div.hobbyContent {
+        height: 30vh;
+        width: 80vw;
+        margin-left: calc(100% - 95%);
+        margin-top: calc(100% - -50%);}
+    #art4 div.about {
+        width: 28%;
+        height: 10%;
+        margin-top: calc(100% - 11%);
+        margin-left: calc(100% - 32%);}
+    #art4 p {
+        font-size: 13px;
+        padding-top: 5%;}
+    #art4 div.hobbiesPhoto {
+        margin-left: calc(100% - 95%);
+        margin-top: calc(100% - 85%);
+        height: 60vh;
+        width: 70vw;}
+    #art4 div.hobbiesPhoto div.hobby {
+        flex-basis: 45%;}
+/* .......... article 5 .......... */
+    #art5 h1 {
+        font-size: 30px; 
+        margin-left: 5%;}
+    #art5 div.art5Content p {
+        font-size: 10px;}
+    #art5 div.art5Line {
+        margin-left: calc(100% - 86%);
+        margin-top: calc(100% - 114%);
+        width: 46%;}
+    #art5 div.art5Content {
+        margin-left: calc(100% - 40%);
+        margin-top: calc(100% - 128%);
+        width: 40%;}
+    #art5 div.art5Photo {
+        height: 35vh;}
+    #art5 div.softSkills h3 {
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;}
+        
+    /* .......... footer ..........*/  
+}
 /*Media Query for Mobile Devices*/
-@media (max-width: 480px) {
+@media (min-width: 377px) and (max-width: 480px) {
     /* .......... nav .......... */
     a { 
         font-size: 15px;}
@@ -369,6 +500,8 @@ footer h5 {
         text-align: center;
     }
     /* .......... article 1 .......... */
+    #art1 {
+        height: 100vh;}
     #art1 div.whyPortfolio {
         width: 70vw;
         height: 80vh;
@@ -381,6 +514,8 @@ footer h5 {
         font-size: 20px; }
 
     /* .......... article 2 .......... */
+    #art2 {
+        height: 100vh;}
     #art2 > div.art2Content {
         width: 92vw;
     }
@@ -400,6 +535,8 @@ footer h5 {
     #art2 .contact i {
         font-size: 1.5rem; }
     /* .......... article 3 .......... */
+    #art3 {
+        height: 100vh;}
     #art3 div.abtContent {
         margin-top: calc(100% - 50%);
         margin-left: calc(100% - 92%);
@@ -427,6 +564,11 @@ footer h5 {
         font-size: 30px; }
     #art4 div.hobbyContent h1 {
         font-size: 18px;}
+    #art4 div.hobbyContent {
+        height: 30vh;            
+        width: 40vw;
+        margin-left: calc(100% - 45%);
+        margin-top: calc(100% - 68%);}
     #art4 div.about {
         width: 24%;
         height: 10%;
@@ -480,7 +622,6 @@ footer h5 {
 
 /*Media Query for Laptops and Desktops*/
 @media (min-width: 1025px) and (max-width:1280) {
-
 }
 
 /* Media Query for Large Screens */
@@ -516,6 +657,8 @@ footer h5 {
         text-align: center;
     }
     /* .......... article 1 .......... */
+    #art1 {
+        height: 100vh;}
     #art1 div.whyPortfolio {
         width: 50vw;
         height: 50vh;
@@ -528,6 +671,8 @@ footer h5 {
         font-size: 26px; }
 
     /* .......... article 2 .......... */
+    #art2 {
+        height: 100vh;}
     #art2 > div.art2Content {
         width: 40vw;
     }
@@ -541,6 +686,9 @@ footer h5 {
         height: 50vh;
         width: 40vw;}
     /* .......... article 3 .......... */
+    #art3 {
+        height: 100vh;
+    }
     #art3 div.abtContent {
         margin-top: calc(100% - 68%);
         margin-left: calc(100% - 92%);
@@ -563,6 +711,11 @@ footer h5 {
         font-size: 50px; }
     #art4 div.hobbyContent h1 {
         font-size: 30px;}
+    #art4 div.hobbyContent {
+        height: 30vh;
+        width: 40vw;
+        margin-left: calc(100% - 45%);
+        margin-top: calc(100% - 68%);}
     #art4 div.about {
         width: 18%;
         height: 10%;
