@@ -329,8 +329,150 @@ footer h5 {
     font-size: 15px;
     text-align: center;
 }
+/*Media Query for 320*/
+@media (max-width: 320px) {
+    /* .......... nav .......... */
+    a { 
+        font-size: 11px;}
+    nav {
+        width: 98vw;
+        height: 50px;
+        line-height: 50px;
+        top:35%;}
+    .burger {
+        font-size: 15px;
+        top:35%;}
+    /* .......... header .......... */
+    header {
+        height: 100vh;
+        background-position: 30%, 0;}
+    header h1 {   
+        font-size: 30px;
+        padding-top: 50vh;}
+    /* .......... fonts  .......... */
+    p {
+        font-size: 12px;
+        padding-left: 8%;
+        padding-right: 8%;}
+    h3 {
+        font-size: 40px;}
+    h4 {
+        font-size: 30px;}
+    h3, h5 {
+        letter-spacing: 2px;
+        padding-top: 30px;
+        font-weight: 300;
+        text-align: center;}
+    /* .......... article 1 .......... */
+    #art1 {
+         height: 90vh;}
+    #art1 div.whyPortfolio {
+        width: 76vw;
+        height: 70vh;
+        margin-top: calc(100% - 90%);
+        margin-left: calc(100% - 89%);
+        padding: 1% 3% 1% 3%; }
+    #art1 div.whyPortfolio h1 {
+        font-size: 22px ; }
+    #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
+        font-size: 14px; }
+
+    /* .......... article 2 .......... */
+    #art2 {
+        height: 100vh;}
+    #art2 > div.art2Content {
+        width: 92vw;}
+    #art2 > div.art2Content h2 {
+        font-size: 30px;}
+    #art1, #art2 p {
+        line-height: 1;}
+    #art2 div.welcomePhoto {
+        margin-top: calc(100% - 11%);
+        margin-left: calc(100% - 72%);
+        height: 30vh;
+        width: 45vw; }
+    #art2 p {
+        font-size: 12px;
+        padding-left: 5%;
+        padding-right: 5%;}
+    #art2 .contact i {
+        font-size: 1.5rem; }
+    /* .......... article 3 .......... */
+    #art3 {
+        height: 100vh;
+    }
+    #art3 div.abtContent {
+        margin-top: calc(100% - 45%);
+        margin-left: calc(100% - 92%);
+        width: 80vw;}
+    #art3 div.shadow {
+        height: 20%;
+        margin-top: calc(100% - 50%);}
+    #art3 div.abtContent p {
+        line-height: 1.5;}
+    #art3 p {
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 0;}
+
+    #art3 h3.skills {
+        margin-top: 12%;
+        margin-right: 40%;
+        font-size: 30px;}
+    /* .......... article 4 .......... */
+    #art4 {
+        height: 100vh;
+    }
+    #art4 div.about h1 {
+        font-size: 24px;
+        line-height: 2; }
+    #art4 div.hobbyContent h1 {
+        font-size: 25px;}
+    #art4 div.hobbyContent {
+        height: 30vh;
+        width: 100vw;
+        margin-left: calc(100% - 95%);
+        margin-top: calc(100% - 1px);}
+    #art4 div.about {
+        width: 32%;
+        height: 15%;
+        margin-top: calc(100% - 37%);
+        margin-left: calc(100% - 55%);}
+    #art4 p {
+        font-size: 10px;
+        padding-top: 1%;}
+    #art4 div.hobbiesPhoto {
+        margin-left: calc(100% - 95%);
+        margin-top: calc(100% - 85%);
+        height: 66vh;
+        width: 62vw;}
+    #art4 div.hobbiesPhoto div.hobby {
+        flex-basis: 35%;}
+/* .......... article 5 .......... */
+    #art5 h1 {
+        font-size: 30px; 
+        margin-left: 5%;}
+    #art5 div.art5Content p {
+        font-size: 10px;}
+    #art5 div.art5Line {
+        margin-left: calc(100% - 86%);
+        margin-top: calc(100% - 114%);
+        width: 46%;}
+    #art5 div.art5Content {
+        margin-left: calc(100% - 40%);
+        margin-top: calc(100% - 128%);
+        width: 40%;}
+    #art5 div.art5Photo {
+        height: 35vh;}
+    #art5 div.softSkills h3 {
+        font-size: 25px;
+        padding-left: 5%;
+        padding-right: 5%;}
+        
+    /* .......... footer ..........*/  
+}
 /*Media Query for IphoneX*/
-@media (max-width: 376px) {
+@media (min-width:321px) and (max-width: 376px) {
     /* .......... nav .......... */
     a { 
         font-size: 13px;}
@@ -650,7 +792,7 @@ footer h5 {
         padding-top: 50vh;}
     /* .......... fonts  .......... */
     p {
-        font-size: 24px;}
+        font-size: 18px;}
     h3 {
         font-size: 40px;}
     h4 {
@@ -673,7 +815,7 @@ footer h5 {
     #art1 div.whyPortfolio h1 {
         font-size: 50px ; }
     #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
-        font-size: 26px; }
+        font-size: 21px; }
 
     /* .......... article 2 .......... */
     #art2 {
@@ -700,7 +842,7 @@ footer h5 {
         width: 50vw;
     }
     #art3 div.shadow {
-        height: 49vh;
+        height: 25vh;
         margin-top: calc(100% - 74%);
     }
     #art3 div.abtContent p {
