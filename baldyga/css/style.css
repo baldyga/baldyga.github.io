@@ -228,6 +228,9 @@ section {
 #art4 div.hobbyContent p {
     line-height: 2;
 }
+#art4 p.hobbyColor {
+    padding-top: 0;
+}
 #art4 div.hobbyContent p.hobbyColor {
     color: var(--orange);
     font-family: 'Fredericka the Great', cursive;
@@ -341,7 +344,7 @@ footer h5 {
         top:35%;}
     /* .......... header .......... */
     header {
-        height: 80vh;
+        height: 90vh;
         background-position: 30%, 0;}
     header h1 {   
         font-size: 40px;
@@ -399,7 +402,7 @@ footer h5 {
         height: 60vh;
     }
     #art3 div.abtContent {
-        margin-top: calc(100% - 50%);
+        margin-top: calc(100% - 45%);
         margin-left: calc(100% - 92%);
         width: 80vw;}
     #art3 div.shadow {
@@ -408,7 +411,7 @@ footer h5 {
     #art3 div.abtContent p {
         line-height: 1.5;}
     #art3 p {
-        font-size: 18px;
+        font-size: 16px;
         padding-left: 0;
         padding-right: 0;}
 
