@@ -453,11 +453,11 @@ footer h5 {
         font-size: 30px; 
         margin-left: 5%;}
     #art5 div.art5Content p {
-        font-size: 10px;}
+        font-size: 8px;}
     #art5 div.art5Line {
         margin-left: calc(100% - 86%);
-        margin-top: calc(100% - 114%);
-        width: 46%;}
+        margin-top: calc(100% - 117%);
+        width: 50%;}
     #art5 div.art5Content {
         margin-left: calc(100% - 40%);
         margin-top: calc(100% - 128%);
