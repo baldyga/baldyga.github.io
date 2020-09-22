@@ -58,7 +58,6 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    height: 100vh;
     overflow: hidden;
 }
 header h2 { 
@@ -342,6 +341,7 @@ footer h5 {
         top:35%;}
     /* .......... header .......... */
     header {
+        height: 80vh;
         background-position: 30%, 0;}
     header h1 {   
         font-size: 40px;
@@ -362,7 +362,7 @@ footer h5 {
         text-align: center;}
     /* .......... article 1 .......... */
     #art1 {
-         height: 60vh;}
+         height: 70vh;}
     #art1 div.whyPortfolio {
         width: 76vw;
         height: 48vh;
@@ -376,7 +376,7 @@ footer h5 {
 
     /* .......... article 2 .......... */
     #art2 {
-        height: 60vh;}
+        height: 70vh;}
     #art2 > div.art2Content {
         width: 92vw;}
     #art2 > div.art2Content h2 {
@@ -480,6 +480,7 @@ footer h5 {
         top:35%;}
     /* .......... header .......... */
     header {
+        height: 100vh;
         background-position: top, left;}
     header h1 {   
         font-size: 40px;
@@ -639,6 +640,7 @@ footer h5 {
         top:35%;}
     /* .......... header .......... */
     header {
+        height: 100vh;
         background-position: top, left;}
     header h1 {   
         font-size: 70px;
