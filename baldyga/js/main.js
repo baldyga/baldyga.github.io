@@ -1,6 +1,5 @@
 const times = document.querySelector('.fa-times');
 const bars = document.querySelector('.fa-bars');
-const btnContact = document.querySelector('.btnContact');
 
 function navBurger() {
     const nav = document.querySelector('nav');
@@ -11,11 +10,3 @@ function navBurger() {
 }
 times.addEventListener('click', navBurger);
 bars.addEventListener('click', navBurger);
-
-
-function form() {
-    const activeForm = document.querySelector('.cooperation');
-    activeForm.classList.toggle('form');
-    const h4 = document.querySelector('.contacth4');
-}
-btnContact.addEventListener('click', form);
