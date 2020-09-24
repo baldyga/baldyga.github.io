@@ -172,11 +172,13 @@ h3, h5 {
     transform: rotate(360deg); }
 /*  ................... article 3  .................... */
 #art3 { 
-    background-image: url(../img/bgi/pexels-cottonbro-4065876.jpg);}
+    background-image: url(../img/bgi/pexels-cottonbro-4065876.jpg);
+    background-position: 20%;
+}
 #art3 div.shadow {
     opacity: 50%;
     width: 100vw;
-    height: 25%;
+    height: 15%;
     margin-top: calc(100% - 50%);
 }
 #art3 div.abtContent {
@@ -292,17 +294,25 @@ h3, h5 {
     padding-left: 5%;
     padding-right: 5%;
 }
+#art5 ol {
+    margin-left: 12%;
+    width: 80%;
+}
 /* ................... footer ...................*/
 footer {
     background-color: black;
     padding: 1%;
 }
+.contact i {
+    font-size: 1.5rem; }
 footer > .contact {
     flex-flow: row nowrap;
     justify-content: space-around;
 }
 footer h5 {
-    text-align: right; }
+    text-align: right; 
+    font-size: 10px;
+}
 /*Media Query for 320*/
 @media (max-width: 320px) {}
 /*Media Query for Iphone X*/
@@ -360,7 +370,8 @@ footer h5 {
         width: 50vw;
     }
     #art3 div.shadow {
-        margin-top: calc(100% - 75%); }
+        margin-top: calc(100% - 75%); 
+        height: 25%; }
     #art3 div.abtContent p {
         line-height: 2.5; }
     #art3 h3.skills {
