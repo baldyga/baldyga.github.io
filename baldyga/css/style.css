@@ -78,7 +78,7 @@ a {
 /* .................... header .................... */
 header {
     position: static;
-    background-image: url(../img/clean-deskjpg.jpg);
+    background-image: url(../img/bgi/clean-deskjpg.jpg);
     overflow: hidden;
     background-position: 30%, 0;
 }
@@ -216,22 +216,22 @@ h3, h5 {
     flex-basis: 45%;
 }
 #art4 div.hobbiesPhoto div.hobby.h1 {
-    background-image: url(../img/hobbies/me1.JPG);
+    background-image: url(../img/hobbies/pich1.JPG);
 }
 #art4 div.hobbiesPhoto div.hobby.h2 {
-    background-image: url(../img/hobbies/me2.JPG);
+    background-image: url(../img/hobbies/pich2.JPG);
 }
 #art4 div.hobbiesPhoto div.hobby.h3 {
-    background-image: url(../img/hobbies/me3.JPG);
+    background-image: url(../img/hobbies/pich3.JPG);
 }
 #art4 div.hobbiesPhoto div.hobby.h4 {
-    background-image: url(../img/hobbies/me4.JPG);
+    background-image: url(../img/hobbies/pich4.jpg);
 }
 #art4 div.hobbiesPhoto div.hobby.h5 {
-    background-image: url(../img/hobbies/me5.JPG);
+    background-image: url(../img/hobbies/pich5.jpg);
 }
 #art4 div.hobbiesPhoto div.hobby.h6 {
-    background-image: url(../img/hobbies/me6.JPG);
+    background-image: url(../img/hobbies/pich6.jpg);
 }
 #art4 div.about {
     border: 3px solid whitesmoke;
