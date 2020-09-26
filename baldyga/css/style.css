@@ -22,16 +22,16 @@ nav a:hover, .skills, #art2 > div.art2Content p.font, #art4 div.hobbyContent h1,
 #art2 > div.art2Content h2, .contact i:hover, #art4 div.hobbyContent p.hobbyColor {
     color: var(--orange); }
 /* BACKGROUND */
-nav, .burger, #art3 div.shadow, #art4 div.about  {
+nav, .burger, #art4 div.about  {
     background-color: var(--orange);}
-header, #art1, #art2 div.welcomePhoto, #art3 {
+header, #art1, #art2 div.welcomePhoto, #art3 div.art3Photo, #art5 div.more > div.headphonesPhoto  {
         background-repeat: no-repeat; }
-header, #art1, #art3, #art4 div.hobbiesPhoto div.hobby, #art5 div.art5Photo {
+header,#art1, #art3 div.art3Photo, #art4 div.hobbiesPhoto div.hobby, #art5 div.art5Photo, #art5 div.more > div.headphonesPhoto {
         background-size: cover; }
 #art2 div.welcomePhoto {
     background-size: contain; }
 /*POSITIONS*/
-nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcomePhoto, #art3 h3.skills, #art3 div.shadow, #art3 div.abtContent, #art4 div.hobbiesPhoto, #art4 div.about, #art4 div.hobbyContent, #art4 div.hobbyContent h1, #art5 div.art5Line, #art5 div.art5Content  {
+nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcomePhoto, #art4 div.hobbiesPhoto, #art4 div.about, #art4 div.hobbyContent, #art4 div.hobbyContent h1, #art5 div.art5Line, #art5 div.art5Content, #art5 div.more > div.headphonesPhoto   {
     position: absolute; }
 #art1, #art2, #art3, #art4, #art5 {
     position: relative; }
@@ -39,13 +39,13 @@ nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcome
 nav ul, #art4 div.hobbiesPhoto, footer > .contact  {
     display: flex;}
 /*TEXT ALIGN*/
-.burger, header, .skills, #art1 div.whyPortfolio h2.fontStyle, h3.fontStyle, h5.fontStyle, #art2 > div.art2Content .font, #art2 > div.art2Content p, #art2 div.contact, #art4 div.about h1, #art5 div.art5Content p, h3, h5   {
+.burger, header, .skills, #art1 div.whyPortfolio h2.fontStyle, h3.fontStyle, h5.fontStyle, #art2 > div.art2Content .font, #art2 > div.art2Content p, #art2 div.contact,#art3 div.abtContent, #art4 div.about h1, #art5 div.art5Content p, h3, h5   {
     text-align: center; }
 /* FONTS  */
 .skills, #art2 > div.art2Content .font, #art4 div.hobbyContent p.hobbyColor, #art5 h1 {
     font-family: 'Fredericka the Great', cursive;}
 /* HEIGHT  */
-header, #art1, #art2, #art3 {
+header, #art1, #art2 {
     height: 100vh; }
 /* .................... nav .................... */
 nav {
@@ -114,7 +114,6 @@ h3, h5 {
 }
 #art1 {
     background-image: url(../img/bgi/notatnik.jpg);
-    background-position: top right;
 }
 #art1 div.whyPortfolio {
     background-color: white;
@@ -171,20 +170,10 @@ h3, h5 {
 .contact i:hover {
     transform: rotate(360deg); }
 /*  ................... article 3  .................... */
-#art3 { 
+#art3 div.art3Photo { 
     background-image: url(../img/bgi/pexels-cottonbro-4065876.jpg);
     background-position: 20%;
-}
-#art3 div.shadow {
-    opacity: 50%;
-    width: 100vw;
-    height: 15%;
-    margin-top: calc(100% - 50%);
-}
-#art3 div.abtContent {
-    margin-top: calc(100% - 45%);
-    margin-left: calc(100% - 92%);
-    width: 80vw;
+    height: 80vh;
 }
 #art3 div.abtContent p {
     font-style: italic;
@@ -193,9 +182,8 @@ h3, h5 {
 #art3 p {
     font-size: 16px; }
 #art3 h3.skills {
-    margin-top: 12%;
-    margin-right: 33%;
     font-size: 45px;
+    padding-top: 100%;
 }
 /* .................... artilce 4 .................... */
 #art4 {
@@ -246,8 +234,9 @@ h3, h5 {
     line-height: 2;  
 }
 #art4 div.hobbyContent {
-    height: 30vh;
-    width: 80vw;
+    height: 25vh;
+    width: 90vw;
+    background-color: #f3f3f3;
     margin-left: calc(100% - 95%);
     margin-top: calc(100% - -50%);
 }
@@ -271,7 +260,7 @@ h3, h5 {
     height: 1%;
     border-bottom: 2px solid var(--orange);
     margin-left: calc(100% - 86%);
-    margin-top: calc(100% - 114%);
+    margin-top: calc(100% - 115%);
     width: 46%;
 }
 #art5 div.art5Photo {
@@ -289,14 +278,16 @@ h3, h5 {
     margin-top: calc(100% - 128%);
     width: 40%;
 }
-#art5 div.softSkills h3 {
-    font-size: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
 #art5 ol {
     margin-left: 12%;
     width: 80%;
+}
+#art5 li {
+    padding-left: 2%;
+}
+#art5 div.more > div.headphonesPhoto {
+    background-image: url(../img/bgi/headphones.jpg);
+    border-radius: 6%;
 }
 /* ................... footer ...................*/
 footer {
@@ -305,13 +296,14 @@ footer {
 }
 .contact i {
     font-size: 1.5rem; }
-footer > .contact {
+footer > div.contact {
     flex-flow: row nowrap;
     justify-content: space-around;
+    padding-top: 5%;
 }
 footer h5 {
     text-align: right; 
-    font-size: 10px;
+    font-size: 6px;
 }
 
 /*Media Query for low resolution Tablets, Ipads, Mobiles (landscape)*/
@@ -361,25 +353,22 @@ footer h5 {
         margin-left: calc(100% - 45%);
         height: 50vh;}
     #art3 div.abtContent {
-        margin-top: calc(100% - 68%);
-        margin-left: calc(100% - 92%);
-        width: 50vw;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
     }
-    #art3 div.shadow {
-        margin-top: calc(100% - 75%); 
-        height: 25%; }
     #art3 div.abtContent p {
         line-height: 2.5; }
     #art3 h3.skills {
-        margin-top: 10%;
-        margin-left: 76%;
-        font-size: 60px;}
+        font-size: 65px;
+        padding-top: 35%;
+    }
     #art4 div.about h1, #art5 h1 {
         font-size: 50px; }
     #art4 div.about h1 {
         line-height: 1; }
     #art4 div.hobbyContent {
-        height: 30vh;
+        height: 22vh;
         margin-left: calc(100% - 45%);
         margin-top: calc(100% - 68%);}
     #art4 div.about {
@@ -413,6 +402,14 @@ footer h5 {
         line-height: 3;
         width: 70vw;
     }
+    #art5 div.more > div.headphonesPhoto {
+        width: 15%;
+        height: 20%;
+        margin-left: calc(100% - 55%);
+        margin-top: calc(100% - 129%);
+    }
+    footer > div.contact {
+        padding-top:0; }
     footer h5 {
         font-size: 15px; }
     .contact i {
