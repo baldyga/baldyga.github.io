@@ -24,14 +24,14 @@ nav a:hover, .skills, #art2 > div.art2Content p.font, #art4 div.hobbyContent h1,
 /* BACKGROUND */
 nav, .burger, #art4 div.about  {
     background-color: var(--orange);}
-header, #art1, #art2 div.welcomePhoto, #art3 div.art3Photo, #art5 div.more > div.headphonesPhoto  {
+header, #art1, #art2 div.welcomePhoto, #art3 div.art3Photo  {
         background-repeat: no-repeat; }
-header,#art1, #art3 div.art3Photo, #art4 div.hobbiesPhoto div.hobby, #art5 div.art5Photo, #art5 div.more > div.headphonesPhoto {
+header,#art1, #art3 div.art3Photo, #art4 div.hobbiesPhoto div.hobby, #art5 div.art5Photo {
         background-size: cover; }
 #art2 div.welcomePhoto {
     background-size: contain; }
 /*POSITIONS*/
-nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcomePhoto, #art4 div.hobbiesPhoto, #art4 div.about, #art4 div.hobbyContent, #art4 div.hobbyContent h1, #art5 div.art5Line, #art5 div.art5Content, #art5 div.more > div.headphonesPhoto   {
+nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcomePhoto, #art4 div.hobbiesPhoto, #art4 div.about, #art4 div.hobbyContent, #art4 div.hobbyContent h1, #art5 div.art5Line, #art5 div.art5Content {
     position: absolute; }
 #art1, #art2, #art3, #art4, #art5 {
     position: relative; }
@@ -285,10 +285,6 @@ h3, h5 {
 #art5 li {
     padding-left: 2%;
 }
-#art5 div.more > div.headphonesPhoto {
-    background-image: url(../img/bgi/headphones.jpg);
-    border-radius: 6%;
-}
 /* ................... footer ...................*/
 footer {
     background-color: black;
@@ -313,7 +309,123 @@ footer h5 {
 @media (min-width: 768px) and (max-width: 1024px) {}
 
 /*Media Query for Tablets, Ipads landscape mode*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+    a, .burger { 
+        font-size: 14px; 
+    }
+    header {
+        background-position: center;
+    }
+    header h1 {   
+        font-size: 45px;
+    }
+    header p.skills {
+        font-size: 14px;
+    }
+    #art1 div.whyPortfolio {
+        width: 80vw;
+        height: 70vh;
+        margin-left: calc(100% - 90%);
+        padding: 2% 8% 2% 8%;
+    }
+    #art1 div.whyPortfolio h1 {
+        font-size: 30px ; 
+    }
+    #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
+        font-size: 18px; 
+    }  
+    #art2 > div.art2Content, #art2 div.welcomePhoto, #art4 div.hobbyContent {
+        width: 45vw;
+    }
+    #art2 > div.art2Content h2 {
+        font-size: 55px;
+        padding-top: 1%;
+    }
+    #art1, #art2 p {
+        line-height: 1.2;
+    }
+    #art2 div.welcomePhoto {
+        margin-top: calc(100% - 85%);
+        margin-left: calc(100% - 45%);
+        height: 50vh;
+    }
+    #art3 div.abtContent {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #art3 div.abtContent p {
+        line-height: 2.5; 
+    }
+    #art3 h3.skills {
+        font-size: 55px;
+        padding-top: 35%;
+    }
+    #art4 div.about h1, #art5 h1 {
+        font-size: 50px; }
+    #art4 div.about h1 {
+        line-height: 1; 
+    }
+    #art4 div.hobbyContent {
+        height: 43vh;
+        margin-left: calc(100% - 51%);
+        margin-top: calc(100% - 68%);
+    }
+    #art4 div.hobbyContent h1 {
+        margin-left: calc(100% - 66%);
+    }
+    #art4 div.about {
+        width: 22%;
+        height: 16%;
+        margin-top: calc(100% - 77%);
+        margin-left: calc(100% - 58%);
+    }
+    #art4 div.hobbiesPhoto {
+        margin-left: calc(100% - 95%);
+        margin-top: calc(100% - 93%);
+        height: 90vh;
+        width: 45vw;
+    }
+    #art4 div.hobbiesPhoto div.hobby {
+        flex-basis: 34%;
+    }
+    #art5 h1 {
+        margin-left: 5%;
+    }
+    #art5 div.art5Content p {
+        font-size: 12px;
+    }
+    #art5 div.art5Line {
+        margin-left: calc(100% - 85%);
+        margin-top: calc(100% - 111%);
+        width: 50%;
+    }
+    #art5 div.art5Content { 
+        margin-left: calc(100% - 33%);
+        margin-top: calc(100% - 114%);
+        width: 30%;
+    }
+    #art5 div.art5Photo {
+        height: 75vh;
+    }
+    #art5 h3 {
+        font-size: 35px;
+    }
+    #art5 ol {
+        margin-left: 14%;
+        line-height: 2;
+        width: 70vw;
+    }
+    footer > div.contact {
+        padding-top:1px; 
+    }
+    footer h5 {
+        font-size: 10px; 
+    }
+    .contact i {
+        font-size: 2rem; 
+    }
+}
 
 /*Media Query for Laptops and Desktops*/
 @media (min-width: 1025px) and (max-width:1280) {
@@ -401,12 +513,6 @@ footer h5 {
         margin-left: 14%;
         line-height: 3;
         width: 70vw;
-    }
-    #art5 div.more > div.headphonesPhoto {
-        width: 15%;
-        height: 20%;
-        margin-left: calc(100% - 55%);
-        margin-top: calc(100% - 129%);
     }
     footer > div.contact {
         padding-top:0; }
