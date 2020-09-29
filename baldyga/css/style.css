@@ -31,12 +31,12 @@ header,#art1, #art3 div.art3Photo,#art4 div.hobbiesPhoto div.hobby, #art5 div.ar
 #art2 div.welcomePhoto {
     background-size: contain; }
 /*POSITIONS*/
-nav, .burger, #art1 div.whyPortfolio, #art2 > div.art2Content, #art2 div.welcomePhoto, #art5 div.art5Line, #art5 div.art5Content {
+nav, .burger, #art1 div.whyPortfolio, #art5 div.art5Line, #art5 div.art5Content {
     position: absolute; }
 #art1, #art2, #art3, #art4, #art5 {
     position: relative; }
 /*FLEX*/
-nav ul, #art4 div.hobbiesPhoto, footer > .contact  {
+nav ul,#art2, #art4 div.hobbiesPhoto, footer > .contact  {
     display: flex;}
 /*TEXT ALIGN*/
 .burger, header, .skills, #art1 div.whyPortfolio h2.fontStyle, h3.fontStyle, h5.fontStyle, #art2 > div.art2Content .font, #art2 > div.art2Content p, #art2 div.contact,#art3 div.abtContent, #art4 div.about h1, #art5 div.art5Content p, h3, h5, #art4 div.hobbyContent h1   {
@@ -45,7 +45,7 @@ nav ul, #art4 div.hobbiesPhoto, footer > .contact  {
 .skills, #art2 > div.art2Content .font, #art4 div.hobbyContent p.hobbyColor, #art5 h1 {
     font-family: 'Fredericka the Great', cursive;}
 /* HEIGHT  */
-header, #art1, #art2 {
+header, #art1 {
     height: 100vh; }
 /* .................... nav .................... */
 nav {
@@ -119,8 +119,7 @@ h3, h5 {
     background-color: white;
     box-shadow: 6px 12px #f5f5f5;
     width: 76vw;
-    height: 48vh;
-    margin-top: calc(100% - 90%);
+    margin-top: calc(100% - 60%);
     margin-left: calc(100% - 89%);
     padding: 1% 3% 1% 3%; 
 }
@@ -139,24 +138,24 @@ h3, h5 {
     line-height: 1; }
 /*  ................... article 2 ....................*/
 #art2 {
-    background-color: #fffafa;}
-#art2 > div.art2Content {
-    margin-top: calc(100% - 90%);
-    margin-left: calc(100% - 95%);
-    height: 50vh;
-    width: 92vw;
+    flex-wrap: wrap;
+    background-color: #fffafa;
 }
 #art2 > div.art2Content h2 {
     padding-top: 5%;
     border-bottom: 2px solid var(--orange);
     font-size: 45px;
 }
+#art2 > div.art2Content {
+    margin: 10% 0 5% 0;
+}
+#art2 > div.art2Content, #art2 div.welcomePhoto {
+    flex-basis: 100%;
+}
 #art2 div.welcomePhoto {
     background-image: url(../img/bgi/pexels-kaboompics-com-6440.jpg); 
-    margin-top: calc(100% - 11%);
-    margin-left: calc(100% - 79%);
+    margin: auto;
     height: 40vh;
-    width: 58vw;
 }
 .contact i {
     transition: 0.4s linear; }
@@ -173,7 +172,7 @@ h3, h5 {
 #art3 div.art3Photo { 
     background-image: url(../img/bgi/pexels-cottonbro-4065876.jpg);
     background-position: 20%;
-    height: 80vh;
+    height: 50vh;
 }
 #art3 div.abtContent p {
     font-style: italic;
@@ -182,8 +181,10 @@ h3, h5 {
 #art3 p {
     font-size: 16px; }
 #art3 h3.skills {
-    font-size: 45px;
-    padding-top: 100%;
+    font-size: 43px;
+    padding-top: 70%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 /* .................... artilce 4 .................... */
 #art4 p {
@@ -198,7 +199,7 @@ h3, h5 {
 #art4 div.hobbiesPhoto div.hobby {
     margin-left: auto;
     margin-right: auto;
-    flex-basis: 48%;
+    flex-basis: 38%;
 }
 #art4 div.hobbiesPhoto div.hobby.h1 {
     background-image: url(../img/hobbies/pich1.JPG);
@@ -283,8 +284,53 @@ footer h5 {
     font-size: 6px;
 }
 
-/*Media Query for low resolution Tablets, Ipads, Mobiles (landscape)*/
-@media (min-width: 481px) and (max-width:767px) {}
+/*Media Query for low resolution Tablets, Ipads, Mobiles portrait mode*/
+@media (min-width: 481px) and (max-width:767px) {
+    #art1 div.whyPortfolio {
+        margin-top: calc(100% - 58%);
+    }
+    #art2 div.welcomePhoto {
+        margin-top: calc(100% - 8%);
+        margin-left: calc(100% - 84%);
+        width: 70vw;
+    }
+    #art2 p {
+        line-height: 2;
+    }
+    #art2 .contact i {
+        font-size: 2rem;
+    }
+    #art3 div.art3Photo {
+        height: 70vh;
+    }
+    #art3 div.abtContent p {
+        margin-top: 5%;
+    }
+    #art4 div.hobbiesPhoto div.hobby {
+        flex-basis: 38%;
+    }
+    #art4 div.hobbiesPhoto {
+        height: 90vh;
+    }
+    #art4 p {
+        font-size: 16px;
+    }
+    #art5 div.art5Content {
+        margin-top: calc(100% - 116%);
+    }
+    #art5 div.art5Line {
+        margin-left: calc(100% - 85%);
+        margin-top: calc(100% - 112%);
+        width: 48%;
+    }
+    footer h5 {
+        font-size: 9px;
+    }
+}
+/*Media Query for low resolution Tablets, Ipads, Mobiles and landscape*/
+@media (min-width: 481px) and (max-width:767px) and (orientation:landscape) {
+    /*NIE DZIAŁA!!!*/
+}
 
 /*Media Query for Tablets, Ipads portrait mode*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -312,8 +358,16 @@ footer h5 {
     #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
         font-size: 24px; 
     }  
+    #art2 div.welcomePhoto {
+        height: 45vh;
+        margin-bottom: 10%;
+        background-size: cover;
+    }
     #art2 > div.art2Content {
-        width: 90vw;
+        margin: 10% 0 5% 0;
+    }
+    #art2 > div.art2Content, #art2 div.welcomePhoto {
+        flex-basis: 100%;
     }
     #art2 > div.art2Content h2 {
         font-size: 55px;
@@ -325,12 +379,6 @@ footer h5 {
     #art2 p {
         line-height: 2;
         font-size: 21px;
-    }
-    #art2 div.welcomePhoto {
-        margin-top: calc(100% - 40%);
-        margin-left: calc(100% - 77%);
-        width: 55vw;
-        height: 50vh;
     }
     #art3 div.abtContent {
         width: 90vw;
@@ -405,24 +453,22 @@ footer h5 {
     #art1 div.whyPortfolio h1 {
         font-size: 40px ; 
     }
+    #art1 div.whyPortfolio {
+        margin-top: calc(100% - 80%);
+    }
     #art1 {
         line-height: 2;
     }
     #art2 div.welcomePhoto {
-        margin-left: calc(100% - 48%);
-        margin-top: calc(100% - 85%);
-        height: 50vh;
-        width: 45vw;
+        height: 45vh;
     }
-    #art2 > div.art2Content {
-        width: 45vw;
-    }
+
     #art3 div.abtContent p {
         line-height: 3; 
     }
     #art3 h3.skills {
         font-size: 60px;
-        padding-top: 50%;
+        padding-top: 28%;
     }
     #art4 div.hobbiesPhoto {
         height: 80vh;
@@ -472,19 +518,20 @@ footer h5 {
     #art1 h2.fontStyle,  #art1 h3.fontStyle,  #art1 h5.fontStyle {
         font-size: 21px; 
     }  
+    #art2 > div.art2Content {
+        margin: 10% 0 10% 0;
+    }
     #art2 > div.art2Content, #art2 div.welcomePhoto {
-        width: 40vw;
+        flex-basis: 48%;
+    }
+    #art2 div.welcomePhoto {
+        height: 50vh;
     }
     #art2 > div.art2Content h2 {
         font-size: 65px;
     }
     #art1, #art2 p {
         line-height: 2;
-    }
-    #art2 div.welcomePhoto {
-        margin-top: calc(100% - 85%);
-        margin-left: calc(100% - 45%);
-        height: 50vh;
     }
     #art3 div.abtContent {
         width: 80vw;
