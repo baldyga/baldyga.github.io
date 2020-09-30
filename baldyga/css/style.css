@@ -543,11 +543,34 @@ footer h5 {
     }
 }
 /*Media Query for low resolution Tablets, Ipads, Mobiles and landscape*/
-@media (min-width: 481px) and (max-width: 767px) and (orientation:landscape) {
+@media (max-width: 767px) and (orientation:landscape) {
+    #art1 {
+        min-height: 85vh;
+        background-position: center;
+    }
+    h2.fontStyle, h3.fontStyle, h5.fontStyle {
+        font-size: 16px;
+    }
+    #art2 div.welcomePhoto {
+        height: 60vh;
+    }
     #art4 div.hobbiesPhoto div.hobby {
         flex-basis: 26%;
     }
+    #art3 h3.skills {
+        padding-top: 30%;
+    }
+    #art3 div.art3Photo {
+        height: 80vh;
+    }
+    div.art5Line {
+        margin-top: 5%;
+    }
+    div.art5Content p {
+        font-size: 13px;
+    }
 }
+
 /*Media Query for Tablets, Ipads portrait mode*/
 @media (min-width: 768px) and (max-width: 1024px) {
     a, .burger { 
