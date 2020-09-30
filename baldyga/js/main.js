@@ -1,5 +1,6 @@
 const times = document.querySelector('.fa-times');
 const bars = document.querySelector('.fa-bars');
+const preloader = document.querySelector('section.wrapper');
 
 function navBurger() {
     const nav = document.querySelector('nav');
@@ -10,3 +11,9 @@ function navBurger() {
 }
 times.addEventListener('click', navBurger);
 bars.addEventListener('click', navBurger);
+
+// preloader
+window.addEventListener('load', ()=> {
+    preloader.classList.add('preloader-hiding');
+});
+
