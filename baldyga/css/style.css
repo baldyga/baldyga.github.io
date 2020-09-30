@@ -43,8 +43,11 @@ p.text-center , nav a:hover, .skills, #art2 > div.art2Content p.font, #art4 div.
 #art2 > div.art2Content h2, .contact i:hover, #art4 div.hobbyContent p.hobbyColor {
     color: var(--orange); }
 /* BACKGROUND */
-nav, .burger, #art4 div.about  {
+#art4 div.about  {
     background-color: var(--orange);}
+nav, .burger {
+    background-color: var(--blue);
+}
 header, #art1, #art2 div.welcomePhoto, #art3 div.art3Photo  {
         background-repeat: no-repeat; }
 header,#art1, #art3 div.art3Photo,#art4 div.hobbiesPhoto div.hobby, #art5 div.art5Photo {
@@ -497,9 +500,8 @@ footer h5 {
     text-align: right; 
     font-size: 6px;
 }
-
 /*Media Query for low resolution Tablets, Ipads, Mobiles portrait mode*/
-@media (min-width: 481px) and (max-width:767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     #art2 div.welcomePhoto {
         height: 40vh;
         margin-bottom: 10%;
@@ -541,11 +543,10 @@ footer h5 {
     }
 }
 /*Media Query for low resolution Tablets, Ipads, Mobiles and landscape*/
-@media (min-width: 481px) and (max-width:767px) and (orientation:landscape) {
-    #art3 div.art3Photo {
-        height: 70vh;
+@media (min-width: 481px) and (max-width: 767px) and (orientation:landscape) {
+    #art4 div.hobbiesPhoto div.hobby {
+        flex-basis: 26%;
     }
-
 }
 /*Media Query for Tablets, Ipads portrait mode*/
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -696,7 +697,7 @@ footer h5 {
     }
 }
 /*Media Query for Laptops and Desktops*/
-@media (min-width: 1025px) and (max-width:1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     a, .burger { 
         font-size: 18px; 
     }
