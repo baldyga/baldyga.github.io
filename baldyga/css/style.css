@@ -31,17 +31,15 @@ body {
     background-color: #555;
 } 
 /*COLORS*/
-nav a, .burger, #hobby div.about h1, footer h5  {     
+nav a, .burger, footer h5  {     
     color: white; }
 .contact i  {
     color: #2c3531; }
 p.text-center, .skills, #welcome > div.art2Content p.font, #hobby div.hobbyContent h1, #skills h1 { 
     color: var(--blue); }
-#welcome > div.art2Content h2,nav a:hover, .contact i:hover, #hobby div.hobbyContent p.hobbyColor {
+#welcome > div.art2Content h2,nav a:hover, .contact i:hover, #hobby div.hobbyContent p.hobbyColor, #hobby h1 {
     color: var(--orange); }
 /* BACKGROUND */
-#hobby div.about  {
-    background-color: var(--orange);}
 nav, .burger {
     background-color: var(--blue);
 }
@@ -60,10 +58,10 @@ nav, .burger, div.mask > p {
 nav ul,#welcome, #hobby div.hobbiesPhoto, footer > .contact, #skills > div.container5, div.container6 {
     display: flex;}
 /*TEXT ALIGN*/
-.burger, header, .skills, #portfolioIdea div.whyPortfolio h2.fontStyle, h3.fontStyle, h5.fontStyle, #welcome > div.art2Content .font, #welcome > div.art2Content p, #welcome div.contact,#about div.abtContent, #hobby div.about h1,#skills h1, #skills div.art5Content p, h3, h5, #hobby div.hobbyContent h1, div.mask > p   {
+.burger, header, .skills, #portfolioIdea div.whyPortfolio h2.fontStyle, h3.fontStyle, h5.fontStyle, #welcome > div.art2Content .font, #welcome > div.art2Content p, #welcome div.contact,#about div.abtContent, #skills h1, #skills div.art5Content p, h3, h5, #hobby div.hobbyContent h1, div.mask > p, #about h3.skills, #hobby h1   {
     text-align: center; }
 /* FONTS  */
-.skills, #welcome > div.art2Content .font, #hobby div.hobbyContent p.hobbyColor, #skills h1{
+.skills, #welcome > div.art2Content .font, #hobby div.hobbyContent p.hobbyColor, #skills h1, #hobby h1 {
     font-family: 'Fredericka the Great', cursive;}
 /* .................... nav .................... */
 nav {
@@ -201,9 +199,7 @@ h3, h5 {
     font-size: 16px; }
 #about h3.skills {
     font-size: 43px;
-    padding-top: 35%;
-    padding-left: 7%;
-    padding-right: 7%;
+    background-color: #d9b08c5e;
 }
 /* .................... artilce 4 .................... */
 #hobby div.hobbiesPhoto {
@@ -238,12 +234,6 @@ h3, h5 {
 }
 #hobby div.hobbiesPhoto div.hobby.h6 {
     background-image: url(../img/hobbies/pich6.webp);
-}
-#hobby div.about {
-    padding: 3px;
-}
-#hobby div.about h1 {
-    font-size: 30px; 
 }
 #hobby div.hobbyContent h1 {
     font-size: 30px;
@@ -351,10 +341,6 @@ footer h5 {
     #about div.abtContent p {
         margin-top: 5%;
     }
-    #hobby div.about {
-        margin-right: 20%;
-        margin-left: 20%;
-    }
     #hobby div.hobbiesPhoto div.hobby {
         flex-basis: 38%;
     }
@@ -433,12 +419,13 @@ footer h5 {
     #welcome2 div.welcomePhoto {
         height: 45vh;
         margin-bottom: 10%;
+        flex-basis: 100%;
         background-size: cover;
     }
     #welcome > div.art2Content {
         margin: 10% 0 5% 0;
     }
-    #welcome > div.art2Content, #welcome div.welcomePhoto {
+    #welcome > div.art2Content {
         flex-basis: 100%;
     }
     #welcome > div.art2Content h2 {
@@ -465,7 +452,6 @@ footer h5 {
     }
     #about h3.skills {
         font-size: 55px;
-        padding-top: 50%;
     }
     #hobby div.hobbiesPhoto {
         height: 60vh;
@@ -473,15 +459,14 @@ footer h5 {
     #hobby div.hobbiesPhoto div.hobby {
         flex-basis: 32%;
     }
-    #hobby div.about {
-        margin-right: 22%;
-        margin-left: 22%;
-    }
-    #hobby div.about h1, #skills h1 {
+    #skills h1 {
         font-size: 50px; 
     }
     #hobby p {
         font-size: 16px;
+    }
+    #hobby h1 {
+        font-size: 55px;
     }
     div.art5Line {
         margin-top: 6%;
@@ -536,10 +521,12 @@ footer h5 {
     }
     #about h3.skills {
         font-size: 60px;
-        padding-top: 28%;
     }
     #hobby div.hobbiesPhoto {
         height: 80vh;
+    }
+    #hobby h1 {
+        font-size: 55px;
     }
     div.art5Content p {
         font-size: 16px;
@@ -611,21 +598,15 @@ footer h5 {
     }
     #about h3.skills {
         font-size: 75px;
-        padding-top: 50%;
-    }
-    #hobby div.about {
-        margin-right: 25%;
-        padding: 3px;
-        margin-left: 25%;
     }
     #hobby p {
         font-size: 21px;
     }
-    #hobby div.about h1, #skills h1 {
-        font-size: 50px; 
+    #hobby h1 {
+        font-size: 50px;
     }
-    #hobby div.about h1 {
-        line-height: 1; 
+    #skills h1 {
+        font-size: 50px; 
     }
     #hobby div.hobbyContent {
         margin-top: 1%;
@@ -722,21 +703,15 @@ footer h5 {
     }
     #about h3.skills {
         font-size: 65px;
-        padding-top: 30%;
     }
     #hobby p {
         font-size: 16px;
     }
-    #hobby div.about {
-        margin-right: 35%;
-        padding: 3px;
-        margin-left: 35%;
+    #hobby h1 {
+        font-size: 55px;
     }
-    #hobby div.about h1, #skills h1 {
+    #skills h1 {
         font-size: 50px; 
-    }
-    #hobby div.about h1 {
-        line-height: 1; 
     }
     #hobby div.hobbyContent {
         margin-top: 1%;
