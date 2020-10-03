@@ -515,6 +515,8 @@ footer h5 {
     }
     #welcome div.welcomePhoto {
         height: 45vh;
+        background-size: cover;
+        margin-bottom: 10%;
     }
     #about div.abtContent p {
         line-height: 3; 
@@ -523,7 +525,7 @@ footer h5 {
         font-size: 60px;
     }
     #hobby div.hobbiesPhoto {
-        height: 80vh;
+        height: 90vh;
     }
     #hobby h1 {
         font-size: 55px;
